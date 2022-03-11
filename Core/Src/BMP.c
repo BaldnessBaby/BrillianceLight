@@ -1,7 +1,3 @@
-//
-// Created by HCl on 2022/2/24.
-//
-
 #include "BMP.h"
 
 uint8_t ImgReadHeader(BITMAPFILEHEADER*Header, FIL* fp)

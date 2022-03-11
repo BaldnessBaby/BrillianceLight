@@ -8,8 +8,8 @@
 #define LED_NUM 60      //LED数量
 #define NUM (24*LED_NUM + 96)   //数据数量
 
-#define ON 70
-#define OFF 35
+#define ON 27
+#define OFF 13
 
 void LEDShow(void);
 void LEDCloseAll(void);

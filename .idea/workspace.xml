@@ -2,19 +2,16 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="WS2812" targetName="WS2812.elf" />
+      <config projectName="BrillianceLight" targetName="BrillianceLight.elf" />
     </generated>
   </component>
   <component name="CMakeSettings">
     <configurations>
       <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
-      <configuration PROFILE_NAME="Release" ENABLED="true" CONFIG_NAME="Release" />
-      <configuration PROFILE_NAME="RelWithDebInfo" ENABLED="true" CONFIG_NAME="RelWithDebInfo" />
-      <configuration PROFILE_NAME="MinSizeRel" ENABLED="true" CONFIG_NAME="MinSizeRel" />
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9ef0b2b-b171-443b-a0db-a9d9fb9db241" name="变更" comment="" />
+    <list default="true" id="60a1bf9e-5a35-4fed-acfb-cc48211a1bee" name="变更" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,63 +20,14 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="EmbeddedSvdWindowState">
-    <option name="columnWidths">
-      <list>
-        <option value="212" />
-        <option value="184" />
-        <option value="0" />
-      </list>
-    </option>
-    <option name="columnOrder">
-      <list>
-        <option value="名称" />
-        <option value="值" />
-        <option value="描述" />
-      </list>
-    </option>
-    <option name="loadedFiles">
-      <list>
-        <option value="$PROJECT_DIR$/../../ProgramData/STM32Pack/STM32F4xx_DFP.1.0.8/SVD/STM32F41x.svd" />
-      </list>
-    </option>
-    <option name="nodes">
-      <map>
-        <entry key="STM32F41x.svd" value="-E" />
-        <entry key="STM32F41x.svd|g:TIM" value="-E" />
-        <entry key="STM32F41x.svd|p:TIM2" value="-E" />
-        <entry key="STM32F41x.svd|p:TIM2|ARR" value="HC" />
-        <entry key="STM32F41x.svd|p:TIM2|CCER" value="HC" />
-        <entry key="STM32F41x.svd|p:TIM2|CCMR1_Input" value="HC" />
-        <entry key="STM32F41x.svd|p:TIM2|CCMR1_Output" value="HC" />
-        <entry key="STM32F41x.svd|p:TIM2|CCMR2_Input" value="HC" />
-        <entry key="STM32F41x.svd|p:TIM2|CCMR2_Output" value="HC" />
-        <entry key="STM32F41x.svd|p:TIM2|CCR1" value="HE" />
-        <entry key="STM32F41x.svd|p:TIM2|CCR2" value="HE" />
-        <entry key="STM32F41x.svd|p:TIM2|CCR3" value="HC" />
-        <entry key="STM32F41x.svd|p:TIM2|CCR4" value="HC" />
-        <entry key="STM32F41x.svd|p:TIM2|CNT" value="HC" />
-        <entry key="STM32F41x.svd|p:TIM2|CR1" value="HC" />
-        <entry key="STM32F41x.svd|p:TIM2|CR2" value="HC" />
-        <entry key="STM32F41x.svd|p:TIM2|DCR" value="HC" />
-        <entry key="STM32F41x.svd|p:TIM2|DIER" value="HC" />
-        <entry key="STM32F41x.svd|p:TIM2|DMAR" value="HC" />
-        <entry key="STM32F41x.svd|p:TIM2|EGR" value="HC" />
-        <entry key="STM32F41x.svd|p:TIM2|OR" value="HC" />
-        <entry key="STM32F41x.svd|p:TIM2|PSC" value="HC" />
-        <entry key="STM32F41x.svd|p:TIM2|SMCR" value="HC" />
-        <entry key="STM32F41x.svd|p:TIM2|SR" value="HC" />
-      </map>
-    </option>
-  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
-  <component name="Git.Settings">
-    <option name="PREVIOUS_COMMIT_AUTHORS">
-      <list>
-        <option value="TTXBEB &lt;hclegg374@outlook.com&gt;" />
-      </list>
-    </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -89,7 +37,7 @@
     <option name="majorVersion" value="2021" />
     <option name="minorVersion" value="3.3" />
   </component>
-  <component name="ProjectId" id="25SgAO9rjsFB7tWkiHUnU5K1o5O" />
+  <component name="ProjectId" id="269FHFweNk54rxyHWavJEKd3PAK" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -98,22 +46,24 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="cmake.loaded.for.project" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ProgramData/STM32Pack/STM32F4xx_DFP.1.0.8/SVD/STM32F41x.svd" />
-    <property name="settings.editor.selected.configurable" value="CMakeSettings" />
   </component>
-  <component name="RunManager" selected="OpenOCD 下载并运行.OCD WS2812">
-    <configuration name="WS2812.elf" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="WS2812" TARGET_NAME="WS2812.elf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="WS2812" RUN_TARGET_NAME="WS2812.elf">
+  <component name="RunManager" selected="OpenOCD 下载并运行.OCD BrillianceLight">
+    <configuration name="BrillianceLight.elf" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="BrillianceLight" TARGET_NAME="BrillianceLight.elf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="BrillianceLight" RUN_TARGET_NAME="BrillianceLight.elf">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OCD WS2812" type="com.jetbrains.cidr.embedded.openocd.conf.type" factoryName="com.jetbrains.cidr.embedded.openocd.conf.factory" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="WS2812" TARGET_NAME="WS2812.elf" CONFIG_NAME="Debug" version="1" RUN_TARGET_PROJECT_NAME="WS2812" RUN_TARGET_NAME="WS2812.elf">
-      <openocd version="1" gdb-port="3333" telnet-port="4444" board-config="D:\Electronic\WS2812\daplink-f4.cfg" reset-type="INIT" download-type="UPDATED_ONLY">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OCD BrillianceLight" type="com.jetbrains.cidr.embedded.openocd.conf.type" factoryName="com.jetbrains.cidr.embedded.openocd.conf.factory" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="BrillianceLight" TARGET_NAME="BrillianceLight.elf" CONFIG_NAME="Debug" version="1" RUN_TARGET_PROJECT_NAME="BrillianceLight" RUN_TARGET_NAME="BrillianceLight.elf">
+      <openocd version="1" gdb-port="3333" telnet-port="4444" board-config="D:\Electronic\BrillianceLight\daplink-f4.cfg" reset-type="INIT" download-type="UPDATED_ONLY">
         <debugger kind="GDB" isBundled="true" />
       </openocd>
       <method v="2">
@@ -121,57 +71,29 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="CMake 应用程序.WS2812.elf" />
-      <item itemvalue="OpenOCD 下载并运行.OCD WS2812" />
+      <item itemvalue="CMake 应用程序.BrillianceLight.elf" />
+      <item itemvalue="OpenOCD 下载并运行.OCD BrillianceLight" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
-      <changelist id="c9ef0b2b-b171-443b-a0db-a9d9fb9db241" name="变更" comment="" />
-      <created>1645525758683</created>
+      <changelist id="60a1bf9e-5a35-4fed-acfb-cc48211a1bee" name="变更" comment="" />
+      <created>1646827806633</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1645525758683</updated>
-      <workItem from="1645525771529" duration="11869000" />
-      <workItem from="1645541762014" duration="2558000" />
-      <workItem from="1645630514438" duration="3204000" />
-      <workItem from="1645671003630" duration="779000" />
-      <workItem from="1645672929959" duration="10736000" />
-      <workItem from="1645686297688" duration="25722000" />
-      <workItem from="1645717201505" duration="407000" />
-      <workItem from="1645760187479" duration="1162000" />
-      <workItem from="1645778073057" duration="18401000" />
-      <workItem from="1645864328594" duration="4834000" />
-      <workItem from="1645890770623" duration="242000" />
+      <updated>1646827806633</updated>
+      <workItem from="1646827819658" duration="3490000" />
+      <workItem from="1646833552140" duration="9767000" />
+      <workItem from="1646875467309" duration="10129000" />
+      <workItem from="1646911856568" duration="11344000" />
+      <workItem from="1646971081748" duration="3910000" />
+      <workItem from="1646980459798" duration="13727000" />
+      <workItem from="1646999139879" duration="26000" />
     </task>
-    <task id="LOCAL-00001" summary="文件优化">
-      <created>1645891001500</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1645891001500</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="文件优化" />
-    <option name="LAST_COMMIT_MESSAGE" value="文件优化" />
-  </component>
-  <component name="XDebuggerManager">
-    <watches-manager>
-      <configuration name="com.jetbrains.cidr.embedded.openocd.conf.type">
-        <watch expression="send_Buf" />
-        <watch expression="img_bmp24[j]" />
-      </configuration>
-    </watches-manager>
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
   </component>
 </project>

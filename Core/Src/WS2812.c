@@ -3,20 +3,20 @@
 #include "BMP.h"
 #include "main.h"
 #include "usart.h"
-#include "math.h"
 
 extern BMP_INFOHEADER INFO;
 extern uint32_t send_Buf[NUM];
 extern BMP_24 img_bmp24[IMG_WIDTH];
 
-
+/* DMA 发送 PWM  */
 void LEDShow(void)
 {
-    HAL_TIM_PWM_Start_DMA(&htim2, TIM_CHANNEL_2, (uint32_t *)send_Buf, NUM);
+    HAL_TIM_PWM_Start_DMA(&htim1, TIM_CHANNEL_1, (uint32_t *)send_Buf, NUM);
     HAL_Delay(100);
-    HAL_TIM_PWM_Stop_DMA(&htim2,TIM_CHANNEL_2);
+    HAL_TIM_PWM_Stop_DMA(&htim1,TIM_CHANNEL_1);
 }
 
+/* 关闭所有灯珠 */
 void LEDCloseAll(void)
 {
     uint32_t i;
@@ -27,12 +27,13 @@ void LEDCloseAll(void)
     LEDShow();
 }
 
+/* 颜色转换 三色8位 RGB 转换为24位 GRB */
 uint32_t WS281x_Color(uint8_t red, uint8_t green, uint8_t blue)
 {
     return green << 16 | red << 8 | blue;
 }
 
-/* Color order is 'GRB' for WS2812 */
+/* 24位 GRB 颜色写入 */
 void WS281x_SetPixelColor(uint16_t n, uint32_t GRBColor)
 {
     uint8_t i;
@@ -41,6 +42,7 @@ void WS281x_SetPixelColor(uint16_t n, uint32_t GRBColor)
             send_Buf[24 * n + i] = (((GRBColor << i) & 0X800000) ? ON : OFF);
 }
 
+/* 三色8位 RGB 写入 */
 void WS281x_SetPixelRGB(uint16_t n, uint8_t red, uint8_t green, uint8_t blue)
 {
     uint8_t i;
@@ -49,7 +51,7 @@ void WS281x_SetPixelRGB(uint16_t n, uint8_t red, uint8_t green, uint8_t blue)
             send_Buf[24 * n + i] = (((WS281x_Color(red, green, blue) << i) & 0X800000) ? ON : OFF);
 }
 
-/* RGB to GRB */
+/* 24位 RGB 转 GRB */
 uint32_t Change(uint32_t RGB)
 {
     uint8_t R,G,B;
@@ -59,6 +61,7 @@ uint32_t Change(uint32_t RGB)
     return G << 16 | R << 8 | B;
 }
 
+/* 读取图片信息并显示 */
 uint8_t ReadShow(FIL* fp, BITMAPFILEHEADER* Header, BMP_INFOHEADER* INFO,BMP_24 bmp24[IMG_WIDTH])
 {
     if (ImgReadHeader(Header, fp) == 0)
@@ -71,9 +74,9 @@ uint8_t ReadShow(FIL* fp, BITMAPFILEHEADER* Header, BMP_INFOHEADER* INFO,BMP_24 
     {
         LEDCloseAll();      //Close all WS2812 lights
         uint8_t buffer[3];
-        for (int i = INFO->biHeight - 1; i >= 0; i--)       // i 为图像高度
+        for (int i = INFO->biHeight - 1; i >= 0; i--)       // 图像高度
         {
-            for (int j = INFO->biWidth - 1; j >= 0; j--)         // j 为图像宽度（灯带数目）
+            for (int j = INFO->biWidth - 1; j >= 0; j--)         // 图像宽度（灯带数目）
             {
                 f_read(fp,buffer,3*sizeof(uint8_t),&byteswritten);
                 // fread(buffer, sizeof(uint8_t), 3, fp);
@@ -88,7 +91,7 @@ uint8_t ReadShow(FIL* fp, BITMAPFILEHEADER* Header, BMP_INFOHEADER* INFO,BMP_24 
     }
     else
     {
-        return 0;       //Read error (IMG Bitcount is not 24)
+        return 0;       //读取图片错误：bmp位深不为24
     }
     LEDCloseAll();
     return 1;

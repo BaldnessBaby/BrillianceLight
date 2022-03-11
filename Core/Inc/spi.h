@@ -40,7 +40,8 @@ extern SPI_HandleTypeDef hspi1;
 void MX_SPI1_Init(void);
 
 /* USER CODE BEGIN Prototypes */
-
+void spi1_set_speed(uint8_t speed);
+uint8_t spi1_read_write_byte(uint8_t txdata);
 /* USER CODE END Prototypes */
 
 #ifdef __cplusplus

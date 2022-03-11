@@ -21,20 +21,22 @@
 #include "main.h"
 #include "dma.h"
 #include "fatfs.h"
+#include "i2c.h"
 #include "spi.h"
 #include "tim.h"
 #include "usart.h"
-#include "usb_device.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "u8g2.h"
+#include "u8g2_Init.h"
 #include "stdarg.h"
+#include "stdio.h"
+#include "spi_sdcard.h"
+#include "malloc.h"
 #include "WS2812.h"
-#include "w25qxx.h"
 #include "BMP.h"
-#include "fatfs.h"
-#include "ff.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -44,6 +46,9 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
+#define KEY1    HAL_GPIO_ReadPin(key1_GPIO_Port,key1_Pin)
+#define KEY2    HAL_GPIO_ReadPin(key2_GPIO_Port,key2_Pin)
+#define KEY3    HAL_GPIO_ReadPin(key3_GPIO_Port,key3_Pin)
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -54,12 +59,18 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
+unsigned char filename[16];     //文件名数组
+u8g2_t u8g2;
 uint32_t send_Buf[NUM] = {0};
+FATFS *fs[1];
+uint8_t i = 0;      //文件索引
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
+uint8_t key_sacn(uint8_t mode);
+
 int UART_printf(UART_HandleTypeDef *huart, const char *fmt, ...)
 {
     va_list ap;
@@ -87,7 +98,11 @@ BMP_INFOHEADER INFO;
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-
+    unsigned char work[520] = {0};
+    uint8_t key = 0;
+    uint32_t sd_size = 0;
+    uint8_t *buf;
+    uint8_t res = 0;
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -103,75 +118,103 @@ int main(void)
   SystemClock_Config();
 
   /* USER CODE BEGIN SysInit */
+
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_DMA_Init();
-  MX_TIM2_Init();
+  MX_I2C1_Init();
+  MX_TIM1_Init();
+  MX_USART1_UART_Init();
   MX_SPI1_Init();
   MX_FATFS_Init();
-  MX_USB_DEVICE_Init();
-  MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
-    LEDCloseAll();      //Close all WS2812 lights
+    u8g2_Init(&u8g2);
+    LEDCloseAll();
+    SD_CS(1);
+    sd_init();
+    disk_initialize(0);
+    my_mem_init(SRAMIN);     /* 为fatfs相关变量申请内存 */
+    HAL_GPIO_WritePin(LED_GPIO_Port,LED_Pin,GPIO_PIN_RESET);
 
-    char filename[] = "test.bmp";
-    unsigned char work[4096] = {0};
-
-    /* �����ļ���Ϣ��ӡ */
-    UART_printf(&huart1,"--------------------\r\n");
-
-    if(f_mount(&USERFatFS,USERPath,1) == FR_OK)
+    /* 挂载 SD 卡 （检测调试） */
+    if(f_mount(&USERFatFS,"0:",1) == FR_OK)
+    {
         UART_printf(&huart1,"f_mount sucess!!! \r\n");
+        f_mkfs("0:",FM_EXFAT,0,work,sizeof(work));
+    }
     else
     {
-        UART_printf(&huart1,"f_mout error: %d \r\n", retUSER);
-        retUSER = f_mkfs("",FM_FAT32,0,work,sizeof(work));
+        UART_printf(&huart1,"f_mount error: %d \r\n", retUSER);
+//        UART_printf(&huart1,"%d \r\n",f_mount(&USERFatFS,"0:",1));
+        retUSER = f_mkfs("0:",FM_EXFAT,0,work,sizeof(work));
+//        UART_printf(&huart1,"%d \r\n",f_mount(&USERFatFS,"0:",1));
+//        UART_printf(&huart1,"mkfs: %d \r\n",retUSER);
     }
 
-    retUSER = f_open(&USERFile,filename,FA_READ);
+    retUSER = f_open(&USERFile, "test.bmp", FA_READ);
     if(retUSER)
-        UART_printf(&huart1,"f_open file error: %d \r\n",retUSER);
+        UART_printf(&huart1,"f_open file error : %d \r\n",retUSER);
     else
-        UART_printf(&huart1,"f_oopen file sucess!!! \r\n");
+        UART_printf(&huart1,"f_open file sucess!!! \r\n");
 
-    UART_printf(&huart1,"Start read bmp img! \r\n");
-
-//    if( ImgReadData(&USERFile,&HEADER,&INFO,img_bmp24))
-//        UART_printf(&huart1,"read bmp success\r\n");
-//
+//    if(ReadShow(&USERFile,&HEADER,&INFO,img_bmp24))
+//        UART_printf(&huart1,"Draw finished!!! \r\n");
 //    else
-//        UART_printf(&huart1,"read bmp failed\r\n");
-
-    if(ReadShow(&USERFile,&HEADER,&INFO,img_bmp24))
-        UART_printf(&huart1,"Draw finished!!! \r\n");
-    else
-        UART_printf(&huart1,"Draw failed! \r\n");
-
-    retUSER = f_close(&USERFile);
-    if(retUSER)
-        UART_printf(&huart1,"f_close error!!! %d\r\n",retUSER);
-    else
-        UART_printf(&huart1,"f_close success!!! \r\n");
-
-    UART_printf(&huart1,"--------------------\r\n");
-
-    /* IMG Information */
-    UART_printf(&huart1,"Width=%d   Height=%d\r\n",INFO.biWidth,INFO.biHeight);     //IMG Width and Height
-    UART_printf(&huart1,"bit=%d \r\n", INFO.biBitCount);                            //IMG Bitcount
+//        UART_printf(&huart1,"Draw failed! \r\n");
+//
+//    retUSER = f_close(&USERFile);
+//    if(retUSER)
+//        UART_printf(&huart1,"f_close error %d \r\n",retUSER);
+//    else
+//        UART_printf(&huart1,"Close Succeed! \r\n");
 
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+
+  /* 显示 SD 卡总容量 */
+    sd_size = sd_get_sector_count();
+    UART_printf(&huart1,"SD size:%d MB\r\n",sd_size>>11);
+
   while (1)
   {
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-      if(HAL_GPIO_ReadPin(KEY_GPIO_Port,KEY_Pin)==0)
-          ShowRainbow(20);
+
+      key = key_sacn(0);
+      u8g2_ClearBuffer(&u8g2);
+      switch (key)
+      {
+          case 1:
+          {
+              i++;
+              sprintf(filename,"%d.bmp",i);
+              u8g2_DrawStr(&u8g2,20,20,filename);
+          }
+              break;
+          case 2:
+          {
+              retUSER = f_open(&USERFile,filename,FA_READ);
+              if(retUSER)
+                  u8g2_DrawStr(&u8g2,10,20,"Opened!");
+              ReadShow(&USERFile,&HEADER,&INFO,img_bmp24);
+              f_close(&USERFile);
+          }
+              break;
+          case 3:
+          {
+              i--;
+              sprintf(filename,"%d.bmp",i);
+              u8g2_DrawStr(&u8g2,20,20,filename);
+          }
+              break;
+      }
+      u8g2_SendBuffer(&u8g2);
+      HAL_Delay(100);
   }
   /* USER CODE END 3 */
 }
@@ -188,7 +231,7 @@ void SystemClock_Config(void)
   /** Configure the main internal regulator output voltage
   */
   __HAL_RCC_PWR_CLK_ENABLE();
-  __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE1);
+  __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE2);
   /** Initializes the RCC Oscillators according to the specified parameters
   * in the RCC_OscInitTypeDef structure.
   */
@@ -196,10 +239,10 @@ void SystemClock_Config(void)
   RCC_OscInitStruct.HSEState = RCC_HSE_ON;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
   RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
-  RCC_OscInitStruct.PLL.PLLM = 25;
-  RCC_OscInitStruct.PLL.PLLN = 336;
-  RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV4;
-  RCC_OscInitStruct.PLL.PLLQ = 7;
+  RCC_OscInitStruct.PLL.PLLM = 12;
+  RCC_OscInitStruct.PLL.PLLN = 64;
+  RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV2;
+  RCC_OscInitStruct.PLL.PLLQ = 3;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
   {
     Error_Handler();
@@ -209,18 +252,42 @@ void SystemClock_Config(void)
   RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
                               |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
   RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
-  RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
+  RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV2;
   RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV2;
   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
 
-  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK)
+  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_1) != HAL_OK)
   {
     Error_Handler();
   }
 }
 
 /* USER CODE BEGIN 4 */
+uint8_t key_sacn(uint8_t mode)
+{
+    static uint8_t key_up = 1;  /* 按键按松�?????????标志 */
+    uint8_t keyval = 0;
 
+    if (mode) key_up = 1;       /* 支持连按 */
+
+    if (key_up && (KEY1 == 0 || KEY2 == 0 || KEY3 == 0))  /* 按键松开标志�?????????1, 且有任意�?????????个按键按下了 */
+    {
+        HAL_Delay(5);           /* 去抖�????????? */
+        key_up = 0;
+
+        if (KEY1 == 0)  keyval = 1;
+
+        if (KEY2 == 0)  keyval = 2;
+
+        if (KEY3 == 0)  keyval = 3;
+    }
+    else if (KEY1 == 1 && KEY2 == 1 && KEY3 == 1) /* 没有任何按键按下, 标记按键松开 */
+    {
+        key_up = 1;
+    }
+
+    return keyval;              /* 返回键�?? */
+}
 /* USER CODE END 4 */
 
 /**

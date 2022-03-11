@@ -49,11 +49,13 @@ else ()
 endif ()
 
 include_directories(${includes})
-include_directories(w25qxx)
+include_directories(u8g2)
+include_directories(FATFS)
+include_directories(MALLOC)
 
 add_definitions(${defines})
 
-file(GLOB_RECURSE SOURCES ${sources}  "w25qxx/*.*")
+file(GLOB_RECURSE SOURCES ${sources} "u8g2/*.*" "FATFS/*.*" "FATFS/App/*.*" "FATFS/Target/*.*" "MALLOC/*.*")
 
 set(LINKER_SCRIPT $${CMAKE_SOURCE_DIR}/${linkerScript})
 

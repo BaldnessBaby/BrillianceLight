@@ -1,7 +1,3 @@
-//
-// Created by HCl on 2022/2/24.
-//
-
 #ifndef WS2812_BMP_H
 #define WS2812_BMP_H
 
@@ -10,7 +6,7 @@
 #include "string.h"
 #include "fatfs.h"
 
-#define IMG_WIDTH 24        //图像宽度，60像素
+#define IMG_WIDTH 60        //图像宽度，60像素
 
 typedef struct tagBITMAPFILEHEADER
 {
@@ -44,11 +40,6 @@ typedef struct _tagRGBQUAD
     uint8_t  rgbReserved;  //保留，设置为0
 } RGBQUAD;
 
-typedef struct BMP_8
-{
-    uint8_t gray_val;
-}BMP_8;
-
 typedef struct BMP_24
 {
     uint8_t r_val;
@@ -56,17 +47,7 @@ typedef struct BMP_24
     uint8_t b_val;
 }BMP_24;
 
-typedef struct RGB565
-{
-    uint8_t r_bit;
-    uint8_t g_bit;
-    uint8_t b_bit;
-}RGB565;
-
-void dither(BMP_8 bmp8[][IMG_WIDTH]);
 void ImgReadInfo(BMP_INFOHEADER* INFO, FIL* fp);
-void bmp24_to_rgb565(BMP_24 bmp24[][IMG_WIDTH],RGB565 rgb565[][IMG_WIDTH],uint16_t img[][IMG_WIDTH]);
-void bmp8_to_bmp1(BMP_8 bmp8[][IMG_WIDTH],uint8_t img[][IMG_WIDTH/8],uint8_t thre);
 uint8_t saturated_add(uint8_t val1, int8_t val2);
 uint8_t ImgReadData(FIL* fp, BITMAPFILEHEADER* Header, BMP_INFOHEADER* INFO,BMP_24 bmp24[][IMG_WIDTH]);
 uint8_t ImgReadHeader(BITMAPFILEHEADER*Header, FIL* fp);

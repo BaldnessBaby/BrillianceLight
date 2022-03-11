@@ -58,12 +58,18 @@ int UART_printf(UART_HandleTypeDef *huart, const char *fmt, ...);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define KEY_Pin GPIO_PIN_0
-#define KEY_GPIO_Port GPIOA
-#define CS_Pin GPIO_PIN_4
+#define LED_Pin GPIO_PIN_13
+#define LED_GPIO_Port GPIOC
+#define CS_Pin GPIO_PIN_3
 #define CS_GPIO_Port GPIOA
-#define LED_Pin GPIO_PIN_8
-#define LED_GPIO_Port GPIOB
+#define key1_Pin GPIO_PIN_12
+#define key1_GPIO_Port GPIOB
+#define key2_Pin GPIO_PIN_13
+#define key2_GPIO_Port GPIOB
+#define key3_Pin GPIO_PIN_14
+#define key3_GPIO_Port GPIOB
+#define WS2812_Pin GPIO_PIN_8
+#define WS2812_GPIO_Port GPIOA
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */

@@ -6,7 +6,7 @@
 # It is included in the main 'build.ninja'.
 
 # =============================================================================
-# Project: WS2812
+# Project: BrillianceLight
 # Configurations: Debug
 # =============================================================================
 # =============================================================================
@@ -14,7 +14,7 @@
 #############################################
 # Rule for compiling ASM files.
 
-rule ASM_COMPILER__WS2812.2eelf_Debug
+rule ASM_COMPILER__BrillianceLight.2eelf_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = "E:\Program_Files\Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -24,7 +24,7 @@ rule ASM_COMPILER__WS2812.2eelf_Debug
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER__WS2812.2eelf_Debug
+rule C_COMPILER__BrillianceLight.2eelf_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = "E:\Program_Files\Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -34,7 +34,7 @@ rule C_COMPILER__WS2812.2eelf_Debug
 #############################################
 # Rule for linking C executable.
 
-rule C_EXECUTABLE_LINKER__WS2812.2eelf_Debug
+rule C_EXECUTABLE_LINKER__BrillianceLight.2eelf_Debug
   command = cmd.exe /C "$PRE_LINK && "E:\Program_Files\Toolchain\10 2021.10\bin\arm-none-eabi-gcc.exe" $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
   description = Linking C executable $TARGET_FILE
   restat = $RESTAT
@@ -52,7 +52,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = "E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SD:\Electronic\WS2812 -BD:\Electronic\WS2812\cmake-build-debug
+  command = "E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SD:\Electronic\BrillianceLight -BD:\Electronic\BrillianceLight\cmake-build-debug
   description = Re-running CMake...
   generator = 1
 

@@ -6,7 +6,7 @@
   ******************************************************************************
   * @attention
   *
-  * <h2><center>&copy; Copyright (c) 2020 STMicroelectronics.
+  * <h2><center>&copy; Copyright (c) 2022 STMicroelectronics.
   * All rights reserved.</center></h2>
   *
   * This software component is licensed by ST under Ultimate Liberty license
@@ -36,7 +36,6 @@
 /* Includes ------------------------------------------------------------------*/
 #include <string.h>
 #include "ff_gen_drv.h"
-#include "w25qxx.h"
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
@@ -44,15 +43,7 @@
 /* Private variables ---------------------------------------------------------*/
 /* Disk status */
 static volatile DSTATUS Stat = STA_NOINIT;
-#define FLASH_SECTOR_SIZE 	(4096/FLASH_BLOCK_SIZE)
-#define  FLASH_SECTOR_COUNT    ((2*1024*1024)/FLASH_SECTOR_SIZE)    //4的单位是MB
-#define FLASH_BLOCK_SIZE   	    (8)
-/*
-FLASH_SECTOR_SIZE 	 设置为512或者4096都可以使用，但是在512的时候，文件系统认为FLASH中的扇区大小是512字节，在使用的时候，效率远没有4096高
-FLASH_SECTOR_COUNT    挂载的总容量，根据自己需求
-FLASH_BLOCK_SIZE   	  每次擦除的块的个数，原子哥写的是8，因为FLASH的最小擦除单位为扇区（4KB），原子哥的FLASH_SECTOR_SIZE 为512，\
-所以是512*8，我们用1即可。
-*/
+
 /* USER CODE END DECL */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -92,17 +83,6 @@ DSTATUS USER_initialize (
 {
   /* USER CODE BEGIN INIT */
     Stat = STA_NOINIT;
-    if(W25Q16 == BSP_W25QXX_ReadID())
-    {
-        /* 设备ID读取结果正确 */
-        Stat &= ~STA_NOINIT;
-    }
-    else
-    {
-        /* 设备ID读取结果错误 */
-        Stat = STA_NOINIT;;
-    }
-    BSP_W25QXX_Init();
     return Stat;
   /* USER CODE END INIT */
 }
@@ -117,10 +97,7 @@ DSTATUS USER_status (
 )
 {
   /* USER CODE BEGIN STATUS */
-    if(pdrv != 0)
-        Stat = STA_NOINIT;
-    else
-        Stat &= ~STA_NOINIT;
+    Stat = STA_NOINIT;
     return Stat;
   /* USER CODE END STATUS */
 }
@@ -141,17 +118,7 @@ DRESULT USER_read (
 )
 {
   /* USER CODE BEGIN READ */
-    DRESULT res = RES_ERROR;
-    if(!count)return RES_PARERR; //count不能等于0，否则返回参数错误
-    for(; count > 0; count--)
-    {
-        BSP_W25QXX_Read(buff, sector * FLASH_SECTOR_SIZE, FLASH_SECTOR_SIZE);
-        sector++;
-        buff += FLASH_SECTOR_SIZE;
-        res = RES_OK;
-    }
-    //处理返回值，将SPI_SD_driver.c的返回值转成ff.c的返回值
-    return res;
+    return RES_OK;
   /* USER CODE END READ */
 }
 
@@ -172,19 +139,8 @@ DRESULT USER_write (
 )
 {
   /* USER CODE BEGIN WRITE */
-    DRESULT res = RES_ERROR;
-    if(!count)return res; //count不能等于0，否则返回参数错误
-    for(; count > 0; count--)
-    {
-        BSP_W25QXX_Write((uint8_t*)buff, sector * FLASH_SECTOR_SIZE, FLASH_SECTOR_SIZE);
-        sector++;
-        buff += FLASH_SECTOR_SIZE;
-        res = RES_OK;
-    }
-
-    //处理返回值，将SPI_SD_driver.c的返回值转成ff.c的返回值
-    return res;
-    /* USER CODE HERE */
+  /* USER CODE HERE */
+    return RES_OK;
   /* USER CODE END WRITE */
 }
 #endif /* _USE_WRITE == 1 */
@@ -205,31 +161,6 @@ DRESULT USER_ioctl (
 {
   /* USER CODE BEGIN IOCTL */
     DRESULT res = RES_ERROR;
-    switch(cmd)
-    {
-        case CTRL_SYNC:
-            res = RES_OK;
-            break;
-
-        case GET_SECTOR_SIZE:
-            *(WORD*)buff = FLASH_SECTOR_SIZE;
-            res = RES_OK;
-            break;
-
-        case GET_BLOCK_SIZE:
-            *(WORD*)buff = FLASH_BLOCK_SIZE;
-            res = RES_OK;
-            break;
-
-        case GET_SECTOR_COUNT:
-            *(DWORD*)buff = FLASH_SECTOR_COUNT;
-            res = RES_OK;
-            break;
-
-        default:
-            res = RES_PARERR;
-            break;
-    }
     return res;
   /* USER CODE END IOCTL */
 }
