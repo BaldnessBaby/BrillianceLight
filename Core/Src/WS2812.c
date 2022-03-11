@@ -90,9 +90,8 @@ uint8_t ReadShow(FIL* fp, BITMAPFILEHEADER* Header, BMP_INFOHEADER* INFO,BMP_24 
         }
     }
     else
-    {
         return 0;       //读取图片错误：bmp位深不为24
-    }
+
     LEDCloseAll();
     return 1;
 }
