@@ -59,7 +59,7 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-unsigned char filename[16];     //文件名数组
+unsigned char filename[16];     //文件名
 u8g2_t u8g2;
 uint32_t send_Buf[NUM] = {0};
 FATFS *fs[1];
@@ -130,18 +130,18 @@ int main(void)
   MX_SPI1_Init();
   MX_FATFS_Init();
   /* USER CODE BEGIN 2 */
-    u8g2_Init(&u8g2);
+//    u8g2_Init(&u8g2);
     LEDCloseAll();
-    SD_CS(1);
-    sd_init();
-    disk_initialize(0);
-    my_mem_init(SRAMIN);     /* 为fatfs相关变量申请内存 */
+//    SD_CS(1);
+//    sd_init();
+//    disk_initialize(0);
+//    my_mem_init(SRAMIN);     /* 为fatfs相关变量申请内存 */
 
 
-    /* 挂载 SD 卡 （检测调试） */
+    /* 挂载 SD �????? （检测调试） */
 //    if(f_mount(&USERFatFS,"0:",1) == FR_OK)
 //    {
-//        HAL_GPIO_WritePin(LED_GPIO_Port,LED_Pin,GPIO_PIN_RESET);    //挂载成功后板载 LED 点亮
+//        HAL_GPIO_WritePin(LED_GPIO_Port,LED_Pin,GPIO_PIN_RESET);    //挂载成功后板�????? LED 点亮
 //        UART_printf(&huart1,"f_mount sucess!!! \r\n");
 //        f_mkfs("0:",FM_EXFAT,0,work,sizeof(work));
 //    }
@@ -155,14 +155,14 @@ int main(void)
 //    }
 
     /* SD 卡挂载不成功 LED 闪烁，挂在成功后常亮 */
-    while(f_mount(&USERFatFS,"0:",1) != FR_OK)
-    {
-        HAL_GPIO_WritePin(LED_GPIO_Port,LED_Pin,GPIO_PIN_RESET);
-        HAL_Delay(50);
-        HAL_GPIO_WritePin(LED_GPIO_Port,LED_Pin,GPIO_PIN_SET);
-        HAL_Delay(50);
-    }
-    HAL_GPIO_WritePin(LED_GPIO_Port,LED_Pin,GPIO_PIN_RESET);
+//    while(f_mount(&USERFatFS,"0:",1) != FR_OK)
+//    {
+//        HAL_GPIO_WritePin(LED_GPIO_Port,LED_Pin,GPIO_PIN_RESET);
+//        HAL_Delay(50);
+//        HAL_GPIO_WritePin(LED_GPIO_Port,LED_Pin,GPIO_PIN_SET);
+//        HAL_Delay(50);
+//    }
+//    HAL_GPIO_WritePin(LED_GPIO_Port,LED_Pin,GPIO_PIN_RESET);
 
 //    retUSER = f_open(&USERFile, "test.bmp", FA_READ);
 //    if(retUSER)
@@ -186,8 +186,8 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 
-  /* 显示 SD 卡总容量 */
-    sd_size = sd_get_sector_count();
+  /* 显示 SD 卡�?�容�????? */
+//    sd_size = sd_get_sector_count();
 //    UART_printf(&huart1,"SD size:%d MB\r\n",sd_size>>11);
 
   while (1)
@@ -195,37 +195,45 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-      key = key_sacn(0);        //不支持连按
-      u8g2_ClearBuffer(&u8g2);
-      switch (key)
-      {
-          case 1:
-          {
-              i--;
-              sprintf(filename,"%d.bmp",i);
-              u8g2_DrawStr(&u8g2,24,24,filename);
-          }
-              break;
-          case 2:
-          {
-              retUSER = f_open(&USERFile,filename,FA_READ);
-              if(ReadShow(&USERFile,&HEADER,&INFO,img_bmp24))
-              {
-                  u8g2_DrawStr(&u8g2,0,25,"Draw OK!");
-              }
-              f_close(&USERFile);
-          }
-              break;
-          case 3:
-          {
-              i++;
-              sprintf(filename,"%d.bmp",i);
-              u8g2_DrawStr(&u8g2,20,20,filename);
-          }
-              break;
-      }
-      u8g2_SendBuffer(&u8g2);
-      HAL_Delay(100);
+//      key = key_sacn(0);        //不支持连�?????
+//      u8g2_ClearBuffer(&u8g2);
+//      switch (key)
+//      {
+//          case 1:
+//          {
+//              i--;
+//              sprintf(filename,"%d.bmp",i);
+//              u8g2_DrawStr(&u8g2,24,24,filename);
+//          }
+//              break;
+//          case 2:
+//          {
+//              retUSER = f_open(&USERFile,filename,FA_READ);
+//              if(ReadShow(&USERFile,&HEADER,&INFO,img_bmp24))
+//              {
+//                  u8g2_DrawStr(&u8g2,0,25,"Draw OK!");
+//              }
+//              f_close(&USERFile);
+//          }
+//              break;
+//          case 3:
+//          {
+//              i++;
+//              sprintf(filename,"%d.bmp",i);
+//              u8g2_DrawStr(&u8g2,20,20,filename);
+//          }
+//              break;
+//      }
+//      u8g2_SendBuffer(&u8g2);
+//      for(uint8_t z=0;z<10;z++)
+//      {
+//          WS281x_SetPixelRGB(z,0XFF,0,0);
+//      }
+//      LEDShow();
+//      HAL_Delay(50);
+      ShowRainbow(50);
+
+
   }
   /* USER CODE END 3 */
 }
@@ -251,7 +259,7 @@ void SystemClock_Config(void)
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
   RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
   RCC_OscInitStruct.PLL.PLLM = 12;
-  RCC_OscInitStruct.PLL.PLLN = 64;
+  RCC_OscInitStruct.PLL.PLLN = 84;
   RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV2;
   RCC_OscInitStruct.PLL.PLLQ = 3;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
@@ -263,11 +271,11 @@ void SystemClock_Config(void)
   RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
                               |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
   RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
-  RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV2;
+  RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
   RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV2;
   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
 
-  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_1) != HAL_OK)
+  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK)
   {
     Error_Handler();
   }
@@ -276,14 +284,14 @@ void SystemClock_Config(void)
 /* USER CODE BEGIN 4 */
 uint8_t key_sacn(uint8_t mode)
 {
-    static uint8_t key_up = 1;  /* 按键按松�?????????标志 */
+    static uint8_t key_up = 1;  /* 按键按松开标志 */
     uint8_t keyval = 0;
 
     if (mode) key_up = 1;       /* 支持连按 */
 
-    if (key_up && (KEY1 == 0 || KEY2 == 0 || KEY3 == 0))  /* 按键松开标志�?????????1, 且有任意�?????????个按键按下了 */
+    if (key_up && (KEY1 == 0 || KEY2 == 0 || KEY3 == 0))  /* 按键松开标志�??????????????1, 且有任意�??????????????个按键按下了 */
     {
-        HAL_Delay(5);           /* 去抖�????????? */
+        HAL_Delay(5);           /* 去抖�?????????????? */
         key_up = 0;
 
         if (KEY1 == 0)  keyval = 1;
@@ -333,4 +341,3 @@ void assert_failed(uint8_t *file, uint32_t line)
 }
 #endif /* USE_FULL_ASSERT */
 
-/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

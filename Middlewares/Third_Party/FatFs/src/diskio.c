@@ -13,7 +13,6 @@
 /* Includes ------------------------------------------------------------------*/
 #include "diskio.h"
 #include "ff_gen_drv.h"
-#include "spi_sdcard.h"
 
 #if defined ( __GNUC__ )
 #ifndef __weak
@@ -25,7 +24,6 @@
 /* Private define ------------------------------------------------------------*/
 /* Private variables ---------------------------------------------------------*/
 extern Disk_drvTypeDef  disk;
-#define SD_CARD     0       /* SD卡,卷标为0 */
 
 /* Private function prototypes -----------------------------------------------*/
 /* Private functions ---------------------------------------------------------*/
@@ -39,11 +37,10 @@ DSTATUS disk_status (
 	BYTE pdrv		/* Physical drive number to identify the drive */
 )
 {
-//  DSTATUS stat;
-//
-//  stat = disk.drv[pdrv]->disk_status(disk.lun[pdrv]);
-//  return stat;
-    return RES_OK;
+  DSTATUS stat;
+
+  stat = disk.drv[pdrv]->disk_status(disk.lun[pdrv]);
+  return stat;
 }
 
 /**
@@ -56,20 +53,13 @@ DSTATUS disk_initialize (
 )
 {
   DSTATUS stat = RES_OK;
-  uint8_t res = 0;
 
   if(disk.is_initialized[pdrv] == 0)
   {
     disk.is_initialized[pdrv] = 1;
     stat = disk.drv[pdrv]->disk_initialize(disk.lun[pdrv]);
   }
-
-  res = sd_init();
-
-  if(res)
-      return STA_NOINIT;
-  else
-      return 0;
+  return stat;
 }
 
 /**
@@ -87,26 +77,10 @@ DRESULT disk_read (
 	UINT count		/* Number of sectors to read */
 )
 {
-//  DRESULT res;
-//
-//  res = disk.drv[pdrv]->disk_read(disk.lun[pdrv], buff, sector, count);
-//  return res;
+  DRESULT res;
 
-    uint8_t res = 0;
-    if (!count)return RES_PARERR;   /* count不能等于0，否则返回参数错误 */
-
-    res = sd_read_disk(buff, sector, count);
-    while (res)   /* 读出错 */
-    {
-        if (res != 2)sd_init(); /* 重新初始化SD卡 */
-        res = sd_read_disk(buff, sector, count);    //重新读取数据
-//        UART_printf(&hspi1,"SD read error!");
-    }
-
-    if(res == 0x00)
-        return RES_OK;
-    else
-        return RES_ERROR;
+  res = disk.drv[pdrv]->disk_read(disk.lun[pdrv], buff, sector, count);
+  return res;
 }
 
 /**
@@ -146,47 +120,10 @@ DRESULT disk_ioctl (
 	void *buff		/* Buffer to send/receive control data */
 )
 {
-//  DRESULT res;
-//
-//  res = disk.drv[pdrv]->disk_ioctl(disk.lun[pdrv], cmd, buff);
-//  return res;
+  DRESULT res;
 
-    DRESULT res;
-
-    if (pdrv == SD_CARD)    /* SD卡 */
-    {
-        switch (cmd)
-        {
-            case CTRL_SYNC:
-                res = RES_OK;
-                break;
-
-            case GET_SECTOR_SIZE:
-                *(DWORD *)buff = 512;
-                res = RES_OK;
-                break;
-
-            case GET_BLOCK_SIZE:
-                *(WORD *)buff = 8;
-                res = RES_OK;
-                break;
-
-            case GET_SECTOR_COUNT:
-                *(DWORD *)buff = sd_get_sector_count();
-                res = RES_OK;
-                break;
-
-            default:
-                res = RES_PARERR;
-                break;
-        }
-    }
-    else
-    {
-        res = RES_ERROR;    /* 其他的不支持 */
-    }
-
-    return res;
+  res = disk.drv[pdrv]->disk_ioctl(disk.lun[pdrv], cmd, buff);
+  return res;
 }
 #endif /* _USE_IOCTL == 1 */
 

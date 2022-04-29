@@ -79,5 +79,3 @@ int UART_printf(UART_HandleTypeDef *huart, const char *fmt, ...);
 #endif
 
 #endif /* __MAIN_H */
-
-/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

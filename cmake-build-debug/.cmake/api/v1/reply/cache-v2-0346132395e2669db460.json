@@ -223,7 +223,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "21"
+			"value" : "22"
 		},
 		{
 			"name" : "CMAKE_CACHE_PATCH_VERSION",
@@ -235,7 +235,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "1"
+			"value" : "3"
 		},
 		{
 			"name" : "CMAKE_COMMAND",
@@ -931,7 +931,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "E:/Program Files/JetBrains/CLion 2021.2.3/bin/cmake/win/share/cmake-3.21"
+			"value" : "E:/Program Files/JetBrains/CLion 2021.2.3/bin/cmake/win/share/cmake-3.22"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",

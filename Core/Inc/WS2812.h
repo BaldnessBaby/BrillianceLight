@@ -5,11 +5,11 @@
 #include "stm32f4xx_hal.h"
 #include "BMP.h"
 
-#define LED_NUM 60      //LED数量
-#define NUM (24*LED_NUM + 96)   //数据数量
+#define LED_NUM 70      //LED数量
+#define NUM (24*LED_NUM + 128)   //数据数量
 
-#define ON 27
-#define OFF 13
+#define ON 68
+#define OFF 34
 
 void LEDShow(void);
 void LEDCloseAll(void);

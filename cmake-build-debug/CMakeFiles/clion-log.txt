@@ -1,4 +1,4 @@
-"E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=E:/Program Files/JetBrains/CLion 2021.2.3/bin/ninja/win/ninja.exe" -G Ninja D:\Electronic\BrillianceLight
+"E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=E:/Program Files/JetBrains/CLion 2021.2.3/bin/ninja/win/ninja.exe" -G Ninja -S D:\Electronic\BrillianceLight -B D:\Electronic\BrillianceLight\cmake-build-debug
 -- The C compiler identification is GNU 10.3.1
 -- The CXX compiler identification is GNU 10.3.1
 -- The ASM compiler identification is GNU
