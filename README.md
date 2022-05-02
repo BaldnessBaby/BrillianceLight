@@ -21,6 +21,14 @@
 
 
 
+## 附录：
+
+移植Fatfs文件系统：[基于STM32完成FATFS文件系统移植与运用--这是完全免费开源的FAT文件系统 - 云+社区 - 腾讯云 (tencent.com)](https://cloud.tencent.com/developer/article/1938091)
+
+
+
+
+
 > By HCl 
 >
 > Supported by NJUPT-SAST-E

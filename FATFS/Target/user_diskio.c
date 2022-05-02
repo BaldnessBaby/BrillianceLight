@@ -36,7 +36,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include <string.h>
 #include "ff_gen_drv.h"
-
+#include "spi_sdcard.h"
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
 
@@ -82,8 +82,10 @@ DSTATUS USER_initialize (
 )
 {
   /* USER CODE BEGIN INIT */
-    Stat = STA_NOINIT;
-    return Stat;
+    Stat = sd_init();
+    if(Stat)
+        return STA_NOINIT;
+    return SD_OK;
   /* USER CODE END INIT */
 }
 
@@ -97,7 +99,7 @@ DSTATUS USER_status (
 )
 {
   /* USER CODE BEGIN STATUS */
-    Stat = STA_NOINIT;
+    Stat = 0;
     return Stat;
   /* USER CODE END STATUS */
 }
@@ -118,7 +120,9 @@ DRESULT USER_read (
 )
 {
   /* USER CODE BEGIN READ */
-    return RES_OK;
+    DRESULT res;
+    res = sd_read_disk(buff,sector,count);
+    return res;
   /* USER CODE END READ */
 }
 

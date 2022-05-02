@@ -10,8 +10,8 @@
 #define SD_CS_GPIO_CLK_ENABLE()         do{ __HAL_RCC_GPIOA_CLK_ENABLE(); }while(0)
 
 #define sd_spi_read_write_byte(x)       spi1_read_write_byte(x)             /* SD卡 SPI读写函数 */
-#define sd_spi_speed_low()              spi1_set_speed(7)         /* SD卡 SPI低速模式 */
-#define sd_spi_speed_high()             spi1_set_speed(0)         /* SD卡 SPI高速模式 */
+#define sd_spi_speed_low()              spi1_set_speed(7)                   /* SD卡 SPI低速模式 */
+#define sd_spi_speed_high()             spi1_set_speed(0)                   /* SD卡 SPI高速模式 */
 
 /* SD_CS 端口定义 */
 #define SD_CS(x)   do{ x ? \
@@ -22,7 +22,6 @@
 /* SD卡 返回值定义 */
 #define SD_OK           0
 #define SD_ERROR        1
-
 
 /* SD卡 类型定义 */
 #define SD_TYPE_ERR     0X00
