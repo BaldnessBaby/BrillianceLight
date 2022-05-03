@@ -152,22 +152,22 @@ int main(void)
     }
     HAL_GPIO_WritePin(LED_GPIO_Port,LED_Pin,GPIO_PIN_RESET);
 
-//    retUSER = f_open(&USERFile, "test.bmp", FA_READ);
-//    if(retUSER)
-//        UART_printf(&huart1,"f_open file error : %d \r\n",retUSER);
-//    else
-//        UART_printf(&huart1,"f_open file sucess!!! \r\n");
-//
-//    if(ReadShow(&USERFile,&HEADER,&INFO,img_bmp24))
-//        UART_printf(&huart1,"Draw finished!!! \r\n");
-//    else
-//        UART_printf(&huart1,"Draw failed! \r\n");
-//
-//    retUSER = f_close(&USERFile);
-//    if(retUSER)
-//        UART_printf(&huart1,"f_close error %d \r\n",retUSER);
-//    else
-//        UART_printf(&huart1,"Close Succeed! \r\n");
+    retUSER = f_open(&USERFile, "4.bmp", FA_READ);
+    if(retUSER)
+        UART_printf(&huart1,"f_open file error : %d \r\n",retUSER);
+    else
+        UART_printf(&huart1,"f_open file sucess!!! \r\n");
+
+    if(ReadShow(&USERFile,&HEADER,&INFO,img_bmp24))
+        UART_printf(&huart1,"Draw finished!!! \r\n");
+    else
+        UART_printf(&huart1,"Draw failed! \r\n");
+
+    retUSER = f_close(&USERFile);
+    if(retUSER)
+        UART_printf(&huart1,"f_close error %d \r\n",retUSER);
+    else
+        UART_printf(&huart1,"Close Succeed! \r\n");
 
   /* USER CODE END 2 */
 
@@ -175,53 +175,55 @@ int main(void)
   /* USER CODE BEGIN WHILE */
 
   /* 显示 SD 卡容量 */
-    sd_size = sd_get_sector_count();
-    UART_printf(&huart1,"SD size:%d MB\r\n",sd_size>>11);
+//    sd_size = sd_get_sector_count();
+//    UART_printf(&huart1,"SD size:%d MB\r\n",sd_size>>11);
 
   while (1)
   {
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-      key = key_scan(0);        //不支持连按
-      u8g2_ClearBuffer(&u8g2);
-      switch (key)
-      {
-          case 1:
-          {
-//              i--;
-//              sprintf(filename,"%d.bmp",i);
-//              u8g2_DrawStr(&u8g2,24,24,filename);
-              u8g2_DrawStr(&u8g2,24,24,"Key1");
-          }
-              break;
-          case 2:
-          {
-//              retUSER = f_open(&USERFile,filename,FA_READ);
-//              if(ReadShow(&USERFile,&HEADER,&INFO,img_bmp24))
-//              {
-//                  u8g2_DrawStr(&u8g2,0,25,"Draw OK!");
-//              }
-//              f_close(&USERFile);
-              u8g2_DrawStr(&u8g2,24,48,"Key2");
-          }
-              break;
-          case 3:
-          {
-//              i++;
-//              sprintf(filename,"%d.bmp",i);
-//              u8g2_DrawStr(&u8g2,20,20,filename);
-              u8g2_DrawStr(&u8g2,12,24,"Key3");
-          }
-              break;
-      }
-      u8g2_SendBuffer(&u8g2);
-//      for(uint8_t z=0;z<10;z++)
+//      key = key_scan(0);        //不支持连按
+//      u8g2_ClearBuffer(&u8g2);
+//      switch (key)
 //      {
-//          WS281x_SetPixelRGB(z,0XFF,0,0);
+//          case 1:
+//          {
+////              i--;
+////              sprintf(filename,"%d.bmp",i);
+////              u8g2_DrawStr(&u8g2,24,24,filename);
+//              retUSER = f_open(&USERFile, "5.bmp", FA_READ);
+//              if(ReadShow(&USERFile,&HEADER,&INFO,img_bmp24))
+//                  u8g2_DrawStr(&u8g2,24,24,"Key1");
+//              f_close(&USERFile);
+//          }
+//              break;
+//          case 2:
+//          {
+////              retUSER = f_open(&USERFile,filename,FA_READ);
+////              if(ReadShow(&USERFile,&HEADER,&INFO,img_bmp24))
+////              {
+////                  u8g2_DrawStr(&u8g2,0,25,"Draw OK!");
+////              }
+////              f_close(&USERFile);
+//              retUSER = f_open(&USERFile, "2.bmp", FA_READ);
+//              if(ReadShow(&USERFile,&HEADER,&INFO,img_bmp24))
+//                  u8g2_DrawStr(&u8g2,24,24,"Key2");
+//              f_close(&USERFile);
+//          }
+//              break;
+//          case 3:
+//          {
+////              i++;
+////              sprintf(filename,"%d.bmp",i);
+////              u8g2_DrawStr(&u8g2,20,20,filename);
+//
+//          }
+//              break;
 //      }
-//      LEDShow();
-      HAL_Delay(50);
+//      u8g2_SendBuffer(&u8g2);
+      ShowRainbow(100);
+//      HAL_Delay(10);
   }
   /* USER CODE END 3 */
 }

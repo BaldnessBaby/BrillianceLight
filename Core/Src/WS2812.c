@@ -61,7 +61,10 @@ uint32_t Change(uint32_t RGB)
     return G << 16 | R << 8 | B;
 }
 
-/* 读取图片信息并显示 */
+/**
+ * 读取图片信息并显示
+ * 返回 0 为错误 ， 返回 1 为成功
+ */
 uint8_t ReadShow(FIL* fp, BITMAPFILEHEADER* Header, BMP_INFOHEADER* INFO,BMP_24 bmp24[IMG_WIDTH])
 {
     if (ImgReadHeader(Header, fp) == 0)
@@ -74,12 +77,11 @@ uint8_t ReadShow(FIL* fp, BITMAPFILEHEADER* Header, BMP_INFOHEADER* INFO,BMP_24 
     {
         LEDCloseAll();      //Close all WS2812 lights
         uint8_t buffer[3];
-        for (int i = INFO->biHeight - 1; i >= 0; i--)       // 图像高度
+        for (int i = INFO->biHeight - 1; i >= 0; i--)            // 图像高度
         {
-            for (int j = INFO->biWidth - 1; j >= 0; j--)         // 图像宽度（灯带数目）
+            for (int j = 0; j < INFO->biWidth - 1; j++)         // 图像宽度（灯带数目）
             {
                 f_read(fp,buffer,3*sizeof(uint8_t),&byteswritten);
-                // fread(buffer, sizeof(uint8_t), 3, fp);
                 img_bmp24[j].r_val = buffer[2];
                 img_bmp24[j].g_val = buffer[1];
                 img_bmp24[j].b_val = buffer[0];
@@ -87,13 +89,14 @@ uint8_t ReadShow(FIL* fp, BITMAPFILEHEADER* Header, BMP_INFOHEADER* INFO,BMP_24 
 //                UART_printf(&huart1,"r=%d,g=%d,b=%d  i=%d j=%d \r\n",img_bmp24[j].r_val,img_bmp24[j].g_val,img_bmp24[j].b_val,i,j);       //用于调试
             }
             LEDShow();
+            HAL_Delay(1);
         }
     }
     else
-        return 0;       //读取图片错误：bmp位深不为24
+        return 0;
 
     LEDCloseAll();
-    return 1;
+    return 1;       //Succeed
 }
 
 uint32_t Wheel(uint8_t WheelPos)
@@ -112,6 +115,9 @@ uint32_t Wheel(uint8_t WheelPos)
     return WS281x_Color(WheelPos * 3, 255 - WheelPos * 3, 0);
 }
 
+/**
+ * 循环显示彩虹色
+ */
 void ShowRainbow(uint8_t wait)
 {
     uint32_t timestamp = HAL_GetTick();
