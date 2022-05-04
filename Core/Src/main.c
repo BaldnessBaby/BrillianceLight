@@ -152,7 +152,7 @@ int main(void)
     }
     HAL_GPIO_WritePin(LED_GPIO_Port,LED_Pin,GPIO_PIN_RESET);
 
-    retUSER = f_open(&USERFile, "4.bmp", FA_READ);
+    retUSER = f_open(&USERFile, "1.bmp", FA_READ);
     if(retUSER)
         UART_printf(&huart1,"f_open file error : %d \r\n",retUSER);
     else
@@ -222,7 +222,7 @@ int main(void)
 //              break;
 //      }
 //      u8g2_SendBuffer(&u8g2);
-      ShowRainbow(100);
+//      ShowRainbow(100);
 //      HAL_Delay(10);
   }
   /* USER CODE END 3 */

@@ -79,13 +79,13 @@ uint8_t ReadShow(FIL* fp, BITMAPFILEHEADER* Header, BMP_INFOHEADER* INFO,BMP_24 
         uint8_t buffer[3];
         for (int i = INFO->biHeight - 1; i >= 0; i--)            // 图像高度
         {
-            for (int j = 0; j < INFO->biWidth - 1; j++)         // 图像宽度（灯带数目）
+            for (int j = 0; j < INFO->biWidth; j++)         // 图像宽度（灯带数目）
             {
                 f_read(fp,buffer,3*sizeof(uint8_t),&byteswritten);
                 img_bmp24[j].r_val = buffer[2];
                 img_bmp24[j].g_val = buffer[1];
                 img_bmp24[j].b_val = buffer[0];
-                WS281x_SetPixelRGB(j,(img_bmp24[j].r_val)>>3,(img_bmp24[j].g_val)>>3, (img_bmp24[j].b_val)>>3);
+                WS281x_SetPixelRGB(j,(img_bmp24[j].r_val),(img_bmp24[j].g_val), (img_bmp24[j].b_val));
 //                UART_printf(&huart1,"r=%d,g=%d,b=%d  i=%d j=%d \r\n",img_bmp24[j].r_val,img_bmp24[j].g_val,img_bmp24[j].b_val,i,j);       //用于调试
             }
             LEDShow();

@@ -19,7 +19,7 @@ uint8_t ImgReadHeader(BITMAPFILEHEADER*Header, FIL* fp)
 void ImgReadInfo(BMP_INFOHEADER* INFO, FIL* fp)
 {
     uint32_t byteswritten;
-    //fseek(fp, 14L, SEEK_SET);
+//    fseek(fp, 14L, SEEK_SET);
     f_lseek(fp,14);
     uint8_t buffer[100];
     f_read(fp, buffer, sizeof(BMP_INFOHEADER), (UINT *) &byteswritten);
@@ -42,7 +42,7 @@ uint8_t ImgReadData(FIL* fp, BITMAPFILEHEADER* Header, BMP_INFOHEADER* INFO,BMP_
     if (ImgReadHeader(Header, fp) == 0)
         return 0;
     ImgReadInfo(INFO,fp);
-    //fseek(fp, Header->bfOffBits, SEEK_SET);
+//    fseek(fp, Header->bfOffBits, SEEK_SET);
     f_lseek(fp,Header->bfOffBits);
     uint32_t byteswritten;
     if (INFO->biBitCount == 24)

@@ -5,7 +5,7 @@
 #include "stm32f4xx_hal.h"
 #include "BMP.h"
 
-#define LED_NUM 70      //LED数量
+#define LED_NUM 60      //LED数量
 #define NUM (24 * LED_NUM + 128)   //数据数量
 
 #define ON 68

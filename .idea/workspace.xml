@@ -13,7 +13,9 @@
   <component name="ChangeListManager">
     <list default="true" id="60a1bf9e-5a35-4fed-acfb-cc48211a1bee" name="变更" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/BMP.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/BMP.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Inc/WS2812.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/WS2812.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/BMP.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/BMP.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/WS2812.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/WS2812.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
@@ -121,6 +123,7 @@
       <workItem from="1651483715878" duration="3733000" />
       <workItem from="1651556864908" duration="12130000" />
       <workItem from="1651590961880" duration="3562000" />
+      <workItem from="1651626014271" duration="3706000" />
     </task>
     <task id="LOCAL-00001" summary="交互优化">
       <created>1647016835974</created>

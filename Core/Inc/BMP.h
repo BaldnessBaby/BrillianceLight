@@ -10,11 +10,11 @@
 
 typedef struct tagBITMAPFILEHEADER
 {
-    uint16_t bfType;        //2Bytes，必须为"BM"，即0x424D 才是Windows位图文件
-    uint32_t bfSize;         //4Bytes，整个BMP文件的大小
-    uint16_t bfReserved1;  //2Bytes，保留，为0
-    uint16_t bfReserved2;  //2Bytes，保留，为0
-    uint32_t bfOffBits;     //4Bytes，文件起始位置到图像像素数据的字节偏移量
+    uint16_t bfType;          //2Bytes，必须为"BM"，即0x424D 才是Windows位图文件
+    uint32_t bfSize;          //4Bytes，整个BMP文件的大小
+    uint16_t bfReserved1;     //2Bytes，保留，为0
+    uint16_t bfReserved2;     //2Bytes，保留，为0
+    uint32_t bfOffBits;       //4Bytes，文件起始位置到图像像素数据的字节偏移量
 } BITMAPFILEHEADER;
 
 typedef struct _tagBMP_INFOHEADER
