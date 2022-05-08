@@ -77,9 +77,9 @@ uint8_t ReadShow(FIL* fp, BITMAPFILEHEADER* Header, BMP_INFOHEADER* INFO,BMP_24 
     {
         LEDCloseAll();      //Close all WS2812 lights
         uint8_t buffer[3];
-        for (int i = INFO->biHeight - 1; i >= 0; i--)            // 图像高度
+        for (int i = 0; i <= INFO->biHeight; i++)            // 图像高度
         {
-            for (int j = 0; j < INFO->biWidth; j++)         // 图像宽度（灯带数目）
+            for (int j = INFO->biWidth - 1; j >= 0; j--)         // 图像宽度（灯带数目）
             {
                 f_read(fp,buffer,3*sizeof(uint8_t),&byteswritten);
                 img_bmp24[j].r_val = buffer[2];
