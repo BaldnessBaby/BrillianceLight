@@ -46,9 +46,9 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-#define KEY1    HAL_GPIO_ReadPin(key1_GPIO_Port,key1_Pin)
-#define KEY2    HAL_GPIO_ReadPin(key2_GPIO_Port,key2_Pin)
-#define KEY3    HAL_GPIO_ReadPin(key3_GPIO_Port,key3_Pin)
+#define KEY_DOWN    HAL_GPIO_ReadPin(key_down_GPIO_Port,key_down_Pin)
+#define KEY         HAL_GPIO_ReadPin(key_GPIO_Port,key_Pin)
+#define KEY_UP      HAL_GPIO_ReadPin(key_up_GPIO_Port,key_up_Pin)
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -59,11 +59,11 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-unsigned char filename[16];     //文件名
+unsigned char filename[16];     //文件�?
 u8g2_t u8g2;
 uint32_t send_Buf[NUM] = {0};
 FATFS *fs[1];
-uint8_t i = 0;      //文件索引
+char *fn;   //文件索引
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -71,6 +71,7 @@ void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
 uint8_t key_scan(uint8_t mode);
 int UART_printf(UART_HandleTypeDef *huart, const char *fmt, ...);
+void BMP_Select();
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -90,8 +91,9 @@ int main(void)
     unsigned char work[520] = {0};
     uint8_t key = 0;
     uint32_t sd_size = 0;
-    uint8_t *buf;
+    uint8_t buf[20];        //文件名
     uint8_t res = 0;
+    uint8_t i = 0;
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -126,12 +128,16 @@ int main(void)
     disk_initialize(0);
     my_mem_init(SRAMIN);     /* 为fatfs相关变量申请内存 */
 
-    /* 挂载 SD - 检测调试 */
+    /* 挂载 SD  */
     if(f_mount(&USERFatFS,"0:",1) == FR_OK)
     {
-        HAL_GPIO_WritePin(LED_GPIO_Port,LED_Pin,GPIO_PIN_RESET);    //挂载成功后板载 LED 点亮
+        HAL_GPIO_WritePin(LED_GPIO_Port,LED_Pin,GPIO_PIN_RESET);    //挂载成功后板�? LED 点亮
         UART_printf(&huart1,"f_mount sucess!!! \r\n");
         f_mkfs("0:",FM_FAT32,0,work,sizeof(work));
+
+        /* 显示文件夹下文件 */
+//        scan_files("0:",3);
+//        UART_printf(&huart1,"%s\r\n", fn);
     }
     else
     {
@@ -152,6 +158,7 @@ int main(void)
     }
     HAL_GPIO_WritePin(LED_GPIO_Port,LED_Pin,GPIO_PIN_RESET);
 
+    /* 开机测试 */
 //    retUSER = f_open(&USERFile, "1.bmp", FA_READ);
 //    if(retUSER)
 //        UART_printf(&huart1,"f_open file error : %d \r\n",retUSER);
@@ -168,7 +175,6 @@ int main(void)
 //        UART_printf(&huart1,"f_close error %d \r\n",retUSER);
 //    else
 //        UART_printf(&huart1,"Close Succeed! \r\n");
-    HAL_Delay(1000);
 
   /* USER CODE END 2 */
 
@@ -184,45 +190,35 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-      key = key_scan(0);        //不支持连按
       u8g2_ClearBuffer(&u8g2);
-      switch (key)
+      if(HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_12) == 0)
       {
-          case 1:
-          {
-              i--;
-              sprintf(filename,"%d.bmp",i);
-              u8g2_DrawStr(&u8g2,20,20,filename);
-              UART_printf(&huart1,filename);
-          }
-              break;
-          case 2:
-          {
-              retUSER = f_open(&USERFile,filename,FA_READ);
-              if(ReadShow(&USERFile,&HEADER,&INFO,img_bmp24))
-              {
-                  u8g2_DrawStr(&u8g2,0,25,"Draw OK!");
-                  UART_printf(&huart1,"Draw OK\r\n");
-              }
-              f_close(&USERFile);
-//              retUSER = f_open(&USERFile, "2.bmp", FA_READ);
-//              if(ReadShow(&USERFile,&HEADER,&INFO,img_bmp24))
-//                  u8g2_DrawStr(&u8g2,24,24,"Key2");
-//              f_close(&USERFile);
-          }
-              break;
-          case 3:
-          {
-              i++;
-              sprintf(filename,"%d.bmp",i);
-              u8g2_DrawStr(&u8g2,20,20,filename);
-              UART_printf(&huart1,filename);
-          }
-              break;
+          HAL_Delay(20);
+          i--;
+          sprintf(buf,"%d.bmp",i);
+          u8g2_DrawStr(&u8g2,5,44,buf);
+          u8g2_SendBuffer(&u8g2);
       }
-      u8g2_SendBuffer(&u8g2);
-//      ShowRainbow(100);
-      HAL_Delay(10);
+      if(HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_13) == 0)
+      {
+          HAL_Delay(20);
+          f_open(&USERFile, buf, FA_READ);
+          if(ReadShow(&USERFile,&HEADER,&INFO,img_bmp24,1))
+          {
+              u8g2_DrawStr(&u8g2,5,44,"Finish");
+              UART_printf(&huart1,"Finish");
+          }
+          u8g2_SendBuffer(&u8g2);
+      }
+      if(HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_14) == 0)
+      {
+          HAL_Delay(20);
+          i++;
+          sprintf(buf,"%d.bmp",i);
+          u8g2_DrawStr(&u8g2,5,44,buf);
+          u8g2_SendBuffer(&u8g2);
+      }
+      HAL_Delay(50);
   }
   /* USER CODE END 3 */
 }
@@ -273,23 +269,23 @@ void SystemClock_Config(void)
 /* USER CODE BEGIN 4 */
 uint8_t key_scan(uint8_t mode)
 {
-    static uint8_t key_up = 1;  /* 按键按松开标志 */
+    static uint8_t key_up = 1;  /* 按键按松�?标志 */
     uint8_t keyval = 0;
 
     if (mode) key_up = 1;       /* 支持连按 */
 
-    if (key_up && (KEY1 == 0 || KEY2 == 0 || KEY3 == 0))  /* 按键松开标志�??????????????1, 且有任意�??????????????个按键按下了 */
+    if (key_up && (KEY_DOWN == 0 || KEY == 0 || key_up == 0))
     {
-        HAL_Delay(5);           /* 去抖�?????????????? */
+        HAL_Delay(5);
         key_up = 0;
 
-        if (KEY1 == 0)  keyval = 1;
+        if (KEY_DOWN == 0)  keyval = 1;
 
-        if (KEY2 == 0)  keyval = 2;
+        if (KEY == 0)       keyval = 2;
 
-        if (KEY3 == 0)  keyval = 3;
+        if (KEY_UP == 0)    keyval = 3;
     }
-    else if (KEY1 == 1 && KEY2 == 1 && KEY3 == 1) /* 没有任何按键按下, 标记按键松开 */
+    else if (KEY_DOWN == 1 && KEY == 1 && KEY_UP == 1) /* 没有任何按键按下, 标记按键松开 */
     {
         key_up = 1;
     }
@@ -308,6 +304,16 @@ int UART_printf(UART_HandleTypeDef *huart, const char *fmt, ...)
     va_end(ap);
     return length;
 }
+
+//void BMP_Select()
+//{
+//    switch(key_scan(0))
+//    {
+//        case 1:
+//
+//            break;
+//    }
+//}
 /* USER CODE END 4 */
 
 /**

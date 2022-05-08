@@ -12,7 +12,7 @@ extern BMP_24 img_bmp24[IMG_WIDTH];
 void LEDShow(void)
 {
     HAL_TIM_PWM_Start_DMA(&htim1, TIM_CHANNEL_1, (uint32_t *)send_Buf, NUM);
-    HAL_Delay(100);
+    HAL_Delay(80);
     HAL_TIM_PWM_Stop_DMA(&htim1,TIM_CHANNEL_1);
 }
 
@@ -65,7 +65,7 @@ uint32_t Change(uint32_t RGB)
  * 读取图片信息并显示
  * 返回 0 为错误 ， 返回 1 为成功
  */
-uint8_t ReadShow(FIL* fp, BITMAPFILEHEADER* Header, BMP_INFOHEADER* INFO,BMP_24 bmp24[IMG_WIDTH])
+uint8_t ReadShow(FIL* fp, BITMAPFILEHEADER* Header, BMP_INFOHEADER* INFO,BMP_24 bmp24[IMG_WIDTH], uint8_t shift)
 {
     if (ImgReadHeader(Header, fp) == 0)
         return 0;
@@ -85,11 +85,10 @@ uint8_t ReadShow(FIL* fp, BITMAPFILEHEADER* Header, BMP_INFOHEADER* INFO,BMP_24 
                 img_bmp24[j].r_val = buffer[2];
                 img_bmp24[j].g_val = buffer[1];
                 img_bmp24[j].b_val = buffer[0];
-                WS281x_SetPixelRGB(j,(img_bmp24[j].r_val),(img_bmp24[j].g_val), (img_bmp24[j].b_val));
+                WS281x_SetPixelRGB(j,(img_bmp24[j].r_val >> shift),(img_bmp24[j].g_val >> shift), (img_bmp24[j].b_val) >> shift);
 //                UART_printf(&huart1,"r=%d,g=%d,b=%d  i=%d j=%d \r\n",img_bmp24[j].r_val,img_bmp24[j].g_val,img_bmp24[j].b_val,i,j);       //用于调试
             }
             LEDShow();
-            HAL_Delay(1);
         }
     }
     else

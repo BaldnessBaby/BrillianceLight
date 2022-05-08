@@ -32,9 +32,18 @@
   * 引脚为 (3V3 GND SCL SDA)
 * 灯带为 60 个 WS2812C 灯珠
 
+> 目前已知问题：
+>
+> * 灯珠无法超过 60 颗，会显示乱码
+> * 图片的第一个像素不能为黑色，否则无法显示
+
 ## 附录：
 
 移植Fatfs文件系统：[基于STM32完成FATFS文件系统移植与运用--这是完全免费开源的FAT文件系统 - 云+社区 - 腾讯云 (tencent.com)](https://cloud.tencent.com/developer/article/1938091)
+
+文件扫描：[(31条消息) FatFs-目录下文件扫描_EmbededCoder的博客-CSDN博客_fatfs文件扫描](https://blog.csdn.net/u012308586/article/details/115903193?utm_medium=distribute.pc_aggpage_search_result.none-task-blog-2~aggregatepage~first_rank_ecpm_v1~rank_v31_ecpm-2-115903193.pc_agg_new_rank&utm_term=FATFS获取路径下文件列表&spm=1000.2123.3001.4430)
+
+
 
 
 

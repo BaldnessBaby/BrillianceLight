@@ -56,8 +56,6 @@ build CMakeFiles/BrillianceLight.elf.dir/Core/Src/BMP.c.obj: C_COMPILER__Brillia
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\Core\Src
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/Core/Src/WS2812.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/Core/Src/WS2812.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -66,8 +64,6 @@ build CMakeFiles/BrillianceLight.elf.dir/Core/Src/WS2812.c.obj: C_COMPILER__Bril
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\Core\Src
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/Core/Src/dma.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/Core/Src/dma.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -76,8 +72,6 @@ build CMakeFiles/BrillianceLight.elf.dir/Core/Src/dma.c.obj: C_COMPILER__Brillia
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\Core\Src
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/Core/Src/gpio.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/Core/Src/gpio.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -86,8 +80,6 @@ build CMakeFiles/BrillianceLight.elf.dir/Core/Src/gpio.c.obj: C_COMPILER__Brilli
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\Core\Src
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/Core/Src/i2c.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/Core/Src/i2c.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -96,8 +88,6 @@ build CMakeFiles/BrillianceLight.elf.dir/Core/Src/i2c.c.obj: C_COMPILER__Brillia
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\Core\Src
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/Core/Src/main.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/Core/Src/main.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -106,8 +96,6 @@ build CMakeFiles/BrillianceLight.elf.dir/Core/Src/main.c.obj: C_COMPILER__Brilli
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\Core\Src
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/Core/Src/spi.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/Core/Src/spi.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -116,8 +104,6 @@ build CMakeFiles/BrillianceLight.elf.dir/Core/Src/spi.c.obj: C_COMPILER__Brillia
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\Core\Src
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/Core/Src/spi_sdcard.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/Core/Src/spi_sdcard.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -126,8 +112,6 @@ build CMakeFiles/BrillianceLight.elf.dir/Core/Src/spi_sdcard.c.obj: C_COMPILER__
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\Core\Src
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/Core/Src/stm32f4xx_hal_msp.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -136,8 +120,6 @@ build CMakeFiles/BrillianceLight.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj: C_COM
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\Core\Src
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/Core/Src/stm32f4xx_it.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/Core/Src/stm32f4xx_it.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -146,8 +128,6 @@ build CMakeFiles/BrillianceLight.elf.dir/Core/Src/stm32f4xx_it.c.obj: C_COMPILER
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\Core\Src
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/Core/Src/syscalls.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/Core/Src/syscalls.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -156,8 +136,6 @@ build CMakeFiles/BrillianceLight.elf.dir/Core/Src/syscalls.c.obj: C_COMPILER__Br
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\Core\Src
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/Core/Src/sysmem.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/Core/Src/sysmem.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -166,8 +144,6 @@ build CMakeFiles/BrillianceLight.elf.dir/Core/Src/sysmem.c.obj: C_COMPILER__Bril
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\Core\Src
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/Core/Src/system_stm32f4xx.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/Core/Src/system_stm32f4xx.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -176,8 +152,6 @@ build CMakeFiles/BrillianceLight.elf.dir/Core/Src/system_stm32f4xx.c.obj: C_COMP
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\Core\Src
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/Core/Src/tim.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/Core/Src/tim.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -186,8 +160,6 @@ build CMakeFiles/BrillianceLight.elf.dir/Core/Src/tim.c.obj: C_COMPILER__Brillia
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\Core\Src
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/Core/Src/u8g2_Init.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/Core/Src/u8g2_Init.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -196,8 +168,6 @@ build CMakeFiles/BrillianceLight.elf.dir/Core/Src/u8g2_Init.c.obj: C_COMPILER__B
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\Core\Src
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/Core/Src/usart.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/Core/Src/usart.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -206,8 +176,6 @@ build CMakeFiles/BrillianceLight.elf.dir/Core/Src/usart.c.obj: C_COMPILER__Brill
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\Core\Src
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/Core/Startup/startup_stm32f401ccux.s.obj: ASM_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/Core/Startup/startup_stm32f401ccux.s || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -216,8 +184,6 @@ build CMakeFiles/BrillianceLight.elf.dir/Core/Startup/startup_stm32f401ccux.s.ob
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\Core\Startup
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -226,8 +192,6 @@ build CMakeFiles/BrillianceLight.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -236,8 +200,6 @@ build CMakeFiles/BrillianceLight.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -246,8 +208,6 @@ build CMakeFiles/BrillianceLight.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -256,8 +216,6 @@ build CMakeFiles/BrillianceLight.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -266,8 +224,6 @@ build CMakeFiles/BrillianceLight.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -276,8 +232,6 @@ build CMakeFiles/BrillianceLight.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -286,8 +240,6 @@ build CMakeFiles/BrillianceLight.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -296,8 +248,6 @@ build CMakeFiles/BrillianceLight.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -306,8 +256,6 @@ build CMakeFiles/BrillianceLight.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -316,8 +264,6 @@ build CMakeFiles/BrillianceLight.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -326,8 +272,6 @@ build CMakeFiles/BrillianceLight.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -336,8 +280,6 @@ build CMakeFiles/BrillianceLight.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -346,8 +288,6 @@ build CMakeFiles/BrillianceLight.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -356,8 +296,6 @@ build CMakeFiles/BrillianceLight.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -366,8 +304,6 @@ build CMakeFiles/BrillianceLight.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -376,8 +312,6 @@ build CMakeFiles/BrillianceLight.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -386,8 +320,6 @@ build CMakeFiles/BrillianceLight.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -396,8 +328,6 @@ build CMakeFiles/BrillianceLight.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -406,8 +336,6 @@ build CMakeFiles/BrillianceLight.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/FATFS/App/fatfs.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/FATFS/App/fatfs.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -416,8 +344,6 @@ build CMakeFiles/BrillianceLight.elf.dir/FATFS/App/fatfs.c.obj: C_COMPILER__Bril
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\FATFS\App
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/FATFS/Target/user_diskio.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/FATFS/Target/user_diskio.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -426,8 +352,6 @@ build CMakeFiles/BrillianceLight.elf.dir/FATFS/Target/user_diskio.c.obj: C_COMPI
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\FATFS\Target
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/MALLOC/malloc.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/MALLOC/malloc.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -436,8 +360,6 @@ build CMakeFiles/BrillianceLight.elf.dir/MALLOC/malloc.c.obj: C_COMPILER__Brilli
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\MALLOC
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/Middlewares/Third_Party/FatFs/src/diskio.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src/diskio.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -446,8 +368,6 @@ build CMakeFiles/BrillianceLight.elf.dir/Middlewares/Third_Party/FatFs/src/diski
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\Middlewares\Third_Party\FatFs\src
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src/ff.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -456,8 +376,6 @@ build CMakeFiles/BrillianceLight.elf.dir/Middlewares/Third_Party/FatFs/src/ff.c.
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\Middlewares\Third_Party\FatFs\src
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src/ff_gen_drv.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -466,8 +384,6 @@ build CMakeFiles/BrillianceLight.elf.dir/Middlewares/Third_Party/FatFs/src/ff_ge
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\Middlewares\Third_Party\FatFs\src
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/Middlewares/Third_Party/FatFs/src/option/syscall.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src/option/syscall.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -476,8 +392,6 @@ build CMakeFiles/BrillianceLight.elf.dir/Middlewares/Third_Party/FatFs/src/optio
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\Middlewares\Third_Party\FatFs\src\option
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8g2_bitmap.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/u8g2/u8g2_bitmap.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -486,8 +400,6 @@ build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8g2_bitmap.c.obj: C_COMPILER__Bri
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\u8g2
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8g2_box.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/u8g2/u8g2_box.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -496,8 +408,6 @@ build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8g2_box.c.obj: C_COMPILER__Brilli
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\u8g2
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8g2_buffer.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/u8g2/u8g2_buffer.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -506,8 +416,6 @@ build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8g2_buffer.c.obj: C_COMPILER__Bri
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\u8g2
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8g2_circle.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/u8g2/u8g2_circle.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -516,8 +424,6 @@ build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8g2_circle.c.obj: C_COMPILER__Bri
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\u8g2
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8g2_cleardisplay.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/u8g2/u8g2_cleardisplay.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -526,8 +432,6 @@ build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8g2_cleardisplay.c.obj: C_COMPILE
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\u8g2
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8g2_d_memory.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/u8g2/u8g2_d_memory.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -536,8 +440,6 @@ build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8g2_d_memory.c.obj: C_COMPILER__B
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\u8g2
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8g2_d_setup.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/u8g2/u8g2_d_setup.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -546,8 +448,6 @@ build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8g2_d_setup.c.obj: C_COMPILER__Br
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\u8g2
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8g2_font.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/u8g2/u8g2_font.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -556,8 +456,6 @@ build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8g2_font.c.obj: C_COMPILER__Brill
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\u8g2
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8g2_fonts.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/u8g2/u8g2_fonts.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -566,8 +464,6 @@ build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8g2_fonts.c.obj: C_COMPILER__Bril
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\u8g2
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8g2_hvline.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/u8g2/u8g2_hvline.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -576,8 +472,6 @@ build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8g2_hvline.c.obj: C_COMPILER__Bri
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\u8g2
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8g2_input_value.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/u8g2/u8g2_input_value.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -586,8 +480,6 @@ build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8g2_input_value.c.obj: C_COMPILER
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\u8g2
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8g2_intersection.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/u8g2/u8g2_intersection.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -596,8 +488,6 @@ build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8g2_intersection.c.obj: C_COMPILE
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\u8g2
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8g2_kerning.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/u8g2/u8g2_kerning.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -606,8 +496,6 @@ build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8g2_kerning.c.obj: C_COMPILER__Br
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\u8g2
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8g2_line.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/u8g2/u8g2_line.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -616,8 +504,6 @@ build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8g2_line.c.obj: C_COMPILER__Brill
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\u8g2
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8g2_ll_hvline.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/u8g2/u8g2_ll_hvline.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -626,8 +512,6 @@ build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8g2_ll_hvline.c.obj: C_COMPILER__
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\u8g2
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8g2_message.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/u8g2/u8g2_message.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -636,8 +520,6 @@ build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8g2_message.c.obj: C_COMPILER__Br
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\u8g2
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8g2_polygon.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/u8g2/u8g2_polygon.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -646,8 +528,6 @@ build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8g2_polygon.c.obj: C_COMPILER__Br
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\u8g2
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8g2_selection_list.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/u8g2/u8g2_selection_list.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -656,8 +536,6 @@ build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8g2_selection_list.c.obj: C_COMPI
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\u8g2
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8g2_setup.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/u8g2/u8g2_setup.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -666,8 +544,6 @@ build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8g2_setup.c.obj: C_COMPILER__Bril
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\u8g2
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8log.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/u8g2/u8log.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -676,8 +552,6 @@ build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8log.c.obj: C_COMPILER__Brillianc
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\u8g2
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8log_u8g2.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/u8g2/u8log_u8g2.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -686,8 +560,6 @@ build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8log_u8g2.c.obj: C_COMPILER__Bril
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\u8g2
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8log_u8x8.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/u8g2/u8log_u8x8.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -696,8 +568,6 @@ build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8log_u8x8.c.obj: C_COMPILER__Bril
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\u8g2
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8x8_8x8.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/u8g2/u8x8_8x8.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -706,8 +576,6 @@ build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8x8_8x8.c.obj: C_COMPILER__Brilli
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\u8g2
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8x8_byte.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/u8g2/u8x8_byte.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -716,8 +584,6 @@ build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8x8_byte.c.obj: C_COMPILER__Brill
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\u8g2
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8x8_cad.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/u8g2/u8x8_cad.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -726,8 +592,6 @@ build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8x8_cad.c.obj: C_COMPILER__Brilli
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\u8g2
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8x8_capture.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/u8g2/u8x8_capture.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -736,8 +600,6 @@ build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8x8_capture.c.obj: C_COMPILER__Br
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\u8g2
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8x8_d_a2printer.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/u8g2/u8x8_d_a2printer.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -746,8 +608,6 @@ build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8x8_d_a2printer.c.obj: C_COMPILER
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\u8g2
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8x8_d_ssd1306_128x64_noname.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/u8g2/u8x8_d_ssd1306_128x64_noname.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -756,8 +616,6 @@ build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8x8_d_ssd1306_128x64_noname.c.obj
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\u8g2
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8x8_debounce.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/u8g2/u8x8_debounce.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -766,8 +624,6 @@ build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8x8_debounce.c.obj: C_COMPILER__B
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\u8g2
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8x8_display.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/u8g2/u8x8_display.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -776,8 +632,6 @@ build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8x8_display.c.obj: C_COMPILER__Br
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\u8g2
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8x8_fonts.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/u8g2/u8x8_fonts.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -786,8 +640,6 @@ build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8x8_fonts.c.obj: C_COMPILER__Bril
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\u8g2
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8x8_gpio.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/u8g2/u8x8_gpio.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -796,8 +648,6 @@ build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8x8_gpio.c.obj: C_COMPILER__Brill
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\u8g2
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8x8_input_value.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/u8g2/u8x8_input_value.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -806,8 +656,6 @@ build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8x8_input_value.c.obj: C_COMPILER
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\u8g2
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8x8_message.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/u8g2/u8x8_message.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -816,8 +664,6 @@ build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8x8_message.c.obj: C_COMPILER__Br
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\u8g2
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8x8_selection_list.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/u8g2/u8x8_selection_list.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -826,8 +672,6 @@ build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8x8_selection_list.c.obj: C_COMPI
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\u8g2
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8x8_setup.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/u8g2/u8x8_setup.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -836,8 +680,6 @@ build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8x8_setup.c.obj: C_COMPILER__Bril
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\u8g2
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8x8_string.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/u8g2/u8x8_string.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -846,8 +688,6 @@ build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8x8_string.c.obj: C_COMPILER__Bri
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\u8g2
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8x8_u16toa.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/u8g2/u8x8_u16toa.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -856,8 +696,6 @@ build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8x8_u16toa.c.obj: C_COMPILER__Bri
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\u8g2
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8x8_u8toa.c.obj: C_COMPILER__BrillianceLight.2eelf_Debug D$:/Electronic/BrillianceLight/u8g2/u8x8_u8toa.c || cmake_object_order_depends_target_BrillianceLight.elf
   DEFINES = -DDEBUG -DSTM32F401xC -DUSE_HAL_DRIVER
@@ -866,8 +704,6 @@ build CMakeFiles/BrillianceLight.elf.dir/u8g2/u8x8_u8toa.c.obj: C_COMPILER__Bril
   INCLUDES = -ID:/Electronic/BrillianceLight/Core/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/Electronic/BrillianceLight/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/Electronic/BrillianceLight/Drivers/CMSIS/Include -ID:/Electronic/BrillianceLight/FATFS/Target -ID:/Electronic/BrillianceLight/FATFS/App -ID:/Electronic/BrillianceLight/Middlewares/Third_Party/FatFs/src -ID:/Electronic/BrillianceLight/u8g2 -ID:/Electronic/BrillianceLight/FATFS -ID:/Electronic/BrillianceLight/MALLOC
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   OBJECT_FILE_DIR = CMakeFiles\BrillianceLight.elf.dir\u8g2
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
-  TARGET_PDB = BrillianceLight.elf.pdb
 
 
 # =============================================================================
@@ -883,9 +719,8 @@ build BrillianceLight.elf: C_EXECUTABLE_LINKER__BrillianceLight.2eelf_Debug CMak
   OBJECT_DIR = CMakeFiles\BrillianceLight.elf.dir
   POST_BUILD = cmd.exe /C "cd /D D:\Electronic\BrillianceLight\cmake-build-debug && arm-none-eabi-objcopy -Oihex D:/Electronic/BrillianceLight/cmake-build-debug/BrillianceLight.elf D:/Electronic/BrillianceLight/cmake-build-debug/BrillianceLight.hex && arm-none-eabi-objcopy -Obinary D:/Electronic/BrillianceLight/cmake-build-debug/BrillianceLight.elf D:/Electronic/BrillianceLight/cmake-build-debug/BrillianceLight.bin"
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\BrillianceLight.elf.dir\
   TARGET_FILE = BrillianceLight.elf
-  TARGET_PDB = BrillianceLight.elf.pdb
+  TARGET_PDB = BrillianceLight.elf.dbg
 
 
 #############################################
@@ -930,14 +765,14 @@ build all: phony BrillianceLight.elf
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt CMakeCache.txt CMakeFiles/3.22.3/CMakeASMCompiler.cmake CMakeFiles/3.22.3/CMakeCCompiler.cmake CMakeFiles/3.22.3/CMakeCXXCompiler.cmake CMakeFiles/3.22.3/CMakeSystem.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeASMCompiler.cmake.in E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeASMInformation.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCCompiler.cmake.in E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCCompilerABI.c E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCInformation.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCXXCompiler.cmake.in E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCXXInformation.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCompilerIdDetection.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineASMCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineCCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineCXXCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineCompileFeatures.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineCompilerABI.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineCompilerId.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineSystem.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeFindBinUtils.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeGenericSystem.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeParseImplicitIncludeInfo.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeParseImplicitLinkInfo.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeParseLibraryArchitecture.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeSystem.cmake.in E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeTestASMCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeTestCCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeTestCXXCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeTestCompilerCommon.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/ADSP-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/ARMCC-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/ARMClang-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/AppleClang-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Borland-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Bruce-C-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Clang-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Clang-DetermineCompilerInternal.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Compaq-C-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Cray-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Embarcadero-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Fujitsu-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GHS-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-ASM.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-C-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-C.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-FindBinUtils.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/HP-C-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/HP-CXX-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/IAR-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Intel-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/MSVC-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/NVHPC-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/NVIDIA-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/PGI-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/PathScale-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/SCO-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/SDCC-C-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/SunPro-C-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/TI-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Watcom-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/XL-C-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/XL-CXX-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/XLClang-C-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/zOS-C-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Internal/FeatureTesting.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Generic.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt CMakeCache.txt CMakeFiles/3.22.3/CMakeASMCompiler.cmake CMakeFiles/3.22.3/CMakeCCompiler.cmake CMakeFiles/3.22.3/CMakeCXXCompiler.cmake CMakeFiles/3.22.3/CMakeSystem.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeASMInformation.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCInformation.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCXXInformation.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeGenericSystem.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-ASM.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-C.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Generic.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt CMakeCache.txt CMakeFiles/3.22.3/CMakeASMCompiler.cmake CMakeFiles/3.22.3/CMakeCCompiler.cmake CMakeFiles/3.22.3/CMakeCXXCompiler.cmake CMakeFiles/3.22.3/CMakeSystem.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeASMCompiler.cmake.in E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeASMInformation.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCCompiler.cmake.in E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCCompilerABI.c E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCInformation.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCXXCompiler.cmake.in E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCXXInformation.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCompilerIdDetection.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineASMCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineCCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineCXXCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineCompileFeatures.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineCompilerABI.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineCompilerId.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeDetermineSystem.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeFindBinUtils.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeGenericSystem.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeParseImplicitIncludeInfo.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeParseImplicitLinkInfo.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeParseLibraryArchitecture.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeSystem.cmake.in E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeTestASMCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeTestCCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeTestCXXCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeTestCompilerCommon.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/ADSP-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/ARMCC-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/ARMClang-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/AppleClang-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Borland-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Bruce-C-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Clang-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Clang-DetermineCompilerInternal.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Compaq-C-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Cray-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Embarcadero-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Fujitsu-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GHS-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-ASM.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-C-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-C.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-FindBinUtils.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/HP-C-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/HP-CXX-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/IAR-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Intel-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/MSVC-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/NVHPC-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/NVIDIA-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/PGI-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/PathScale-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/SCO-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/SDCC-C-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/SunPro-C-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/TI-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/Watcom-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/XL-C-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/XL-CXX-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/XLClang-C-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/zOS-C-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Internal/FeatureTesting.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Generic.cmake: phony
+build ../CMakeLists.txt CMakeCache.txt CMakeFiles/3.22.3/CMakeASMCompiler.cmake CMakeFiles/3.22.3/CMakeCCompiler.cmake CMakeFiles/3.22.3/CMakeCXXCompiler.cmake CMakeFiles/3.22.3/CMakeSystem.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeASMInformation.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCInformation.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCXXInformation.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeGenericSystem.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/CMakeCommonCompilerMacros.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-ASM.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-C.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU-CXX.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Compiler/GNU.cmake E$:/Program$ Files/JetBrains/CLion$ 2021.2.3/bin/cmake/win/share/cmake-3.22/Modules/Platform/Generic.cmake: phony
 
 
 #############################################

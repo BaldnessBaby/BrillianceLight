@@ -13,7 +13,6 @@
 /* Includes ------------------------------------------------------------------*/
 #include "diskio.h"
 #include "ff_gen_drv.h"
-#include "spi_sdcard.h"
 
 #if defined ( __GNUC__ )
 #ifndef __weak

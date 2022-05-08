@@ -17,6 +17,7 @@
   */
 /* USER CODE END Header */
 #include "fatfs.h"
+#include "usart.h"
 
 uint8_t retUSER;    /* Return value for USER */
 char USERPath[4];   /* USER logical drive path */
@@ -50,5 +51,30 @@ DWORD get_fattime(void)
 }
 
 /* USER CODE BEGIN Application */
+FRESULT scan_files(char* path, uint8_t time)
+{
+    FRESULT res;
+    FILINFO fno;
+    DIR dir;
+    extern char *fn;
 
+    res = f_opendir(&dir, path);
+    if (res == FR_OK)
+    {
+        for (uint8_t i = 0; i < time; i++)
+        {
+            res = f_readdir(&dir, &fno);
+            if (res != FR_OK || fno.fname[0] == 0)
+                return FR_NO_PATH;
+
+            if (fno.fname[0] == '.')
+                continue;
+
+            fn = fno.fname;
+            UART_printf(&huart1,"%s\r\n", fn);
+        }
+    }
+    f_closedir(&dir);
+    return res;
+}
 /* USER CODE END Application */
