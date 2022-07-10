@@ -37,6 +37,7 @@
 #include "malloc.h"
 #include "WS2812.h"
 #include "BMP.h"
+#include "pic.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -65,12 +66,10 @@ uint32_t send_Buf[NUM] = {0};
 FATFS *fs[1];
 char *fn;   //文件索引
 /* USER CODE END PV */
-
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
 uint8_t key_scan(uint8_t mode);
-int UART_printf(UART_HandleTypeDef *huart, const char *fmt, ...);
 void BMP_Select();
 /* USER CODE END PFP */
 
@@ -91,9 +90,7 @@ int main(void)
     unsigned char work[520] = {0};
     uint8_t key = 0;
     uint32_t sd_size = 0;
-    uint8_t buf[20];        //文件名
     uint8_t res = 0;
-    uint8_t i = 0;
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -136,7 +133,7 @@ int main(void)
         f_mkfs("0:",FM_FAT32,0,work,sizeof(work));
 
         /* 显示文件夹下文件 */
-//        scan_files("0:",3);
+//        scan_files("0:");
 //        UART_printf(&huart1,"%s\r\n", fn);
     }
     else
@@ -185,40 +182,26 @@ int main(void)
 //    sd_size = sd_get_sector_count();
 //    UART_printf(&huart1,"SD size:%d MB\r\n",sd_size>>11);
 
+    Begin_menu(&u8g2);
+
   while (1)
   {
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-      u8g2_ClearBuffer(&u8g2);
-      if(HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_12) == 0)
+
+        key = key_scan(0);
+      switch (key)
       {
-          HAL_Delay(20);
-          i--;
-          sprintf(buf,"%d.bmp",i);
-          u8g2_DrawStr(&u8g2,5,44,buf);
-          u8g2_SendBuffer(&u8g2);
+          case 1:
+              Show_BMP(&u8g2);
+              break;
+          case 3:
+              Show_Rainbow(&u8g2);
+              break;
+          default:
+              return 0;
       }
-      if(HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_13) == 0)
-      {
-          HAL_Delay(20);
-          f_open(&USERFile, buf, FA_READ);
-          if(ReadShow(&USERFile,&HEADER,&INFO,img_bmp24,1))
-          {
-              u8g2_DrawStr(&u8g2,5,44,"Finish");
-              UART_printf(&huart1,"Finish");
-          }
-          u8g2_SendBuffer(&u8g2);
-      }
-      if(HAL_GPIO_ReadPin(GPIOB,GPIO_PIN_14) == 0)
-      {
-          HAL_Delay(20);
-          i++;
-          sprintf(buf,"%d.bmp",i);
-          u8g2_DrawStr(&u8g2,5,44,buf);
-          u8g2_SendBuffer(&u8g2);
-      }
-      HAL_Delay(50);
   }
   /* USER CODE END 3 */
 }
@@ -274,7 +257,7 @@ uint8_t key_scan(uint8_t mode)
 
     if (mode) key_up = 1;       /* 支持连按 */
 
-    if (key_up && (KEY_DOWN == 0 || KEY == 0 || key_up == 0))
+    if (key_up && (KEY_DOWN == 0 || KEY == 0 || KEY_UP == 0))
     {
         HAL_Delay(5);
         key_up = 0;
@@ -305,15 +288,6 @@ int UART_printf(UART_HandleTypeDef *huart, const char *fmt, ...)
     return length;
 }
 
-//void BMP_Select()
-//{
-//    switch(key_scan(0))
-//    {
-//        case 1:
-//
-//            break;
-//    }
-//}
 /* USER CODE END 4 */
 
 /**

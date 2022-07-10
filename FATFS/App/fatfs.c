@@ -51,7 +51,7 @@ DWORD get_fattime(void)
 }
 
 /* USER CODE BEGIN Application */
-FRESULT scan_files(char* path, uint8_t time)
+FRESULT scan_files(char* path)
 {
     FRESULT res;
     FILINFO fno;
@@ -61,7 +61,7 @@ FRESULT scan_files(char* path, uint8_t time)
     res = f_opendir(&dir, path);
     if (res == FR_OK)
     {
-        for (uint8_t i = 0; i < time; i++)
+        for (uint8_t i = 0; i < 255; i++)
         {
             res = f_readdir(&dir, &fno);
             if (res != FR_OK || fno.fname[0] == 0)

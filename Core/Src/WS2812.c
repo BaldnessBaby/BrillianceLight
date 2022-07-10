@@ -145,3 +145,64 @@ void ShowRainbow(uint8_t wait)
     }
     LEDShow();
 }
+
+void Show_BMP(u8g2_t *u8g2)
+{
+    uint8_t buf[20];        //文件名
+    uint8_t i = 0;
+    uint8_t key;
+    extern BITMAPFILEHEADER HEADER;
+
+    while(1)
+    {
+        key = key_scan(0);
+        u8g2_ClearBuffer(u8g2);
+        if(key == 1)
+        {
+            HAL_Delay(20);
+            i--;
+            sprintf(buf,"%d.bmp",i);
+            u8g2_DrawStr(u8g2,5,44,buf);
+            u8g2_SendBuffer(u8g2);
+        }
+        if(key == 2)
+        {
+            HAL_Delay(20);
+            f_open(&USERFile, buf, FA_READ);
+            if(ReadShow(&USERFile,&HEADER,&INFO,img_bmp24,1))
+            {
+                u8g2_DrawStr(u8g2,5,44,"Finish");
+                UART_printf(&huart1,"Finish");
+            }
+            u8g2_SendBuffer(u8g2);
+        }
+        if(key == 3)
+        {
+            HAL_Delay(20);
+            i++;
+            sprintf(buf,"%d.bmp",i);
+            u8g2_DrawStr(u8g2,5,44,buf);
+            u8g2_SendBuffer(u8g2);
+        }
+    }
+}
+
+void Show_Rainbow(u8g2_t *u8g2)
+{
+    uint8_t time = 128;
+    uint8_t key;
+
+    u8g2_ClearBuffer(u8g2);
+    u8g2_DrawStr(u8g2,12,24 + 8,"Rainbow");
+    u8g2_SendBuffer(u8g2);
+
+    while (1)
+    {
+        ShowRainbow(time);
+        key = key_scan(0);
+        if(key == 1)
+            time--;
+        if(key == 3)
+            time++;
+    }
+}

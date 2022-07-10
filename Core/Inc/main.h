@@ -55,6 +55,7 @@ void Error_Handler(void);
 
 /* USER CODE BEGIN EFP */
 int UART_printf(UART_HandleTypeDef *huart, const char *fmt, ...);
+uint8_t key_scan(uint8_t mode);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/

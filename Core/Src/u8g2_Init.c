@@ -110,4 +110,14 @@ void u8g2_Init(u8g2_t *u8g2)
     u8g2_ClearBuffer(u8g2);
     u8g2_ClearDisplay(u8g2);
     u8g2_SetFont(u8g2,u8g2_font_utopia24_tr);
+//    u8g2_SetFont(u8g2,u8g2_font_ncenB14_tr);
+}
+
+void Begin_menu(u8g2_t *u8g2)
+{
+    u8g2_DrawTriangle(u8g2,0,0,0,24,12,12);
+    u8g2_DrawStr(u8g2,15,24 - 1,"Rainbow");
+    u8g2_DrawTriangle(u8g2,0,30,0,24 + 24 + 5,12,12 + 24 + 5);
+    u8g2_DrawStr(u8g2,15,48 + 4,"BMP");
+    u8g2_SendBuffer(u8g2);
 }

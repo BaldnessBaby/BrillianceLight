@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
   <component name="CMakeRunConfigurationManager">
     <generated>
       <config projectName="BrillianceLight" targetName="BrillianceLight.elf" />
@@ -12,41 +15,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="60a1bf9e-5a35-4fed-acfb-cc48211a1bee" name="变更" comment="交互优化">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/Inc/pic.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BrillianceLight.ioc" beforeDir="false" afterPath="$PROJECT_DIR$/BrillianceLight.ioc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Inc/WS2812.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/WS2812.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Inc/main.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/main.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/u8g2_Init.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/u8g2_Init.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/WS2812.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/WS2812.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/gpio.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/gpio.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/u8g2_Init.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/u8g2_Init.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FATFS/App/fatfs.c" beforeDir="false" afterPath="$PROJECT_DIR$/FATFS/App/fatfs.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FATFS/App/fatfs.h" beforeDir="false" afterPath="$PROJECT_DIR$/FATFS/App/fatfs.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Middlewares/Third_Party/FatFs/src/diskio.c" beforeDir="false" afterPath="$PROJECT_DIR$/Middlewares/Third_Party/FatFs/src/diskio.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-79340bd0da4e6736e0fe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-6091b489f88ebf7fa981.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2022-04-25T15-22-49-0796.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Other/BrillianceLight.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Other/BrillianceLight.stl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-09c4567c2c83798c0680.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2022-05-05T04-22-27-0242.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-BrillianceLight.elf-Debug-b48b0873d930ff86068e.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/BrillianceLight.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/BrillianceLight.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/BrillianceLight.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/BrillianceLight.elf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/BrillianceLight.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/BrillianceLight.hex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.21.1/CMakeASMCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.21.1/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.21.1/CMakeCXXCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.21.1/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.21.1/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.21.1/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.21.1/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.21.1/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.22.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.22.3/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.22.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.22.3/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeError.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeError.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,11 +88,16 @@
     &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;cmake.loaded.for.project&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;CLionExternalConfigurable&quot;
   }
 }</component>
   <component name="RunManager" selected="OpenOCD 下载并运行.OCD BrillianceLight">
     <configuration name="BrillianceLight.elf" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="BrillianceLight" TARGET_NAME="BrillianceLight.elf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="BrillianceLight" RUN_TARGET_NAME="BrillianceLight.elf">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -157,6 +154,15 @@
       <workItem from="1651979667339" duration="107000" />
       <workItem from="1651980359960" duration="350000" />
       <workItem from="1651988664198" duration="6477000" />
+      <workItem from="1652020632665" duration="317000" />
+      <workItem from="1652021133259" duration="605000" />
+      <workItem from="1652192455370" duration="17000" />
+      <workItem from="1652192483369" duration="93000" />
+      <workItem from="1652193297461" duration="797000" />
+      <workItem from="1655719191313" duration="6248000" />
+      <workItem from="1655741272227" duration="204000" />
+      <workItem from="1657076176410" duration="4279000" />
+      <workItem from="1657430762414" duration="3620000" />
     </task>
     <task id="LOCAL-00001" summary="交互优化">
       <created>1647016835974</created>
@@ -165,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647016835974</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="修复图片左右反转问题">
+      <created>1652020945528</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1652020945528</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,6 +207,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="交互优化" />
-    <option name="LAST_COMMIT_MESSAGE" value="交互优化" />
+    <MESSAGE value="修复图片左右反转问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复图片左右反转问题" />
   </component>
 </project>
